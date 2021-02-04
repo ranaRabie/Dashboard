@@ -24,13 +24,17 @@ let fns ={
             $('#main-wrapper').addClass("content-mob"); 
             $('#side-nav').removeClass("side-nav-mini");
             $('#main-wrapper').removeClass("full-content");
-            $('.hamburger').removeClass('is-active');
+            if($('#main-wrapper').hasClass("content-mob")){
+                $('.hamburger').removeClass('is-active');
+            }
         },
         sideNavScreenHandler(){
             $('#side-nav').removeClass("side-nav-mob");
             $('#side-nav').removeClass("show");
             $('#main-wrapper').removeClass("content-mob");   
-            $('.hamburger').removeClass('is-active');
+            if(!($('#main-wrapper').hasClass("content-mob"))){
+                $('.hamburger').removeClass('is-active');
+            }
         },
         sideNavFocusHandler(){
             $('#side-nav').on('mouseenter', function(){
