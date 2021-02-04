@@ -13,10 +13,14 @@ let fns ={
                     $('.hamburger').toggleClass("is-active");
                 }
             });
-            if($(window).width() > 991.98){
-                fns.sideNav.sideNavFocusHandler();
-            }else{
+            if($(window).width() < 992){
                 fns.sideNav.sideNavMobHandler();
+            }else{
+                fns.sideNav.sideNavFocusHandler();  
+                $('.header-col.ico-controls-wrapper').on("click", function(){
+                    $('#side-nav').removeClass("show");
+                    $('.hamburger').removeClass("is-active");
+                });              
             }
         },
         sideNavMobHandler(){
@@ -65,9 +69,6 @@ let fns ={
                     $('.hamburger').removeClass('is-active');
                 }
             }, 500);
-        },
-        sideNavScreenResizeHandler(){
-
         },
         sideNavFocusHandler(){
             $('#side-nav').on('mouseenter', function(){
