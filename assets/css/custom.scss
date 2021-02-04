@@ -7,6 +7,7 @@ $thin-FontWeight: 300;
 $mid-FontWeight: 500;
 $thick-FontWeight: 700;
 
+$sm-fontSize: .8rem;
 $mid-fontSize: .9rem;
 
 $main-transition: all 0.5s ease-in-out;
@@ -46,6 +47,9 @@ $pageTitle-margin: 0 1rem;
 $breadcrumb-color: #a5acbc;
 $breadcrumbActive-color: #000;
 
+$footer-bgColor: #efefef;
+$footer-borderColor: #dad9d9;
+
 $theme-colors: (
   "primary": #0e1239,
   "secondary": #776bfd,
@@ -75,7 +79,7 @@ $theme-colors: (
 
 /* Generals */
 *{padding: 0;margin: 0;}
-body{font-family: 'Poppins', sans-serif;font-weight: $thin-FontWeight;}
+body{font-family: 'Poppins', sans-serif;font-weight: $thin-FontWeight;overflow-x: hidden;}
 ::-webkit-scrollbar {width: 10px;}
 a, .btn-link{
   &:hover{
@@ -326,13 +330,17 @@ a, .btn-link{
 // Content
 #main-wrapper{
   & #main-header, 
-  & #main-content{
+  & #main-content,
+  & #main-footer{
     padding: $content-padding;
     margin-left: $sideNavActive-width;
     transition: $main-transition;
   }
-  & #main-header{
+  & #main-header,
+  & #main-footer{
     width: calc(100vw - #{$sideNavActive-width});
+  }
+  & #main-header{
     & .pg-tit{
       display: block;
     }
@@ -347,24 +355,32 @@ a, .btn-link{
   }
   &.full-content{
     & #main-header, 
-    & #main-content{
+    & #main-content,
+    & #main-footer{
       margin-left: $sideNavMini-width;
     }
-    & #main-header{
+    & #main-header,
+    & #main-footer{
       width: calc(100vw - #{$sideNavMini-width});
     }
   }
   &.content-mob{
     & #main-header{
       width: calc(100vw - #{$sideNavMini-width});
+    }
+    & #main-content,
+    & #main-footer{
+      width: 100vw;
+      margin-left: 0!important;
+      margin-right: 0!important;
+    }
+    & #main-header{
       margin-left: $sideNavMini-width;
       & .pg-tit{
         display: none;
       }
     }
     & #main-content{
-      margin-left: 0!important;
-      margin-right: 0!important;
       & .pg-tit{
         display: block;
       }
@@ -485,6 +501,16 @@ a, .btn-link{
       color: $breadcrumbActive-color;
     }
   }
+}
+
+// Footer
+#main-footer{
+  background-color: $footer-bgColor;
+  padding-bottom: .3rem!important;
+  padding-top: .3rem!important;
+  border-top: 1px solid $footer-borderColor; 
+  color: gray("600");
+  font-size: $sm-fontSize;
 }
 
 // Icon Controls
