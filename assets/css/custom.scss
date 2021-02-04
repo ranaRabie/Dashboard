@@ -41,8 +41,8 @@ $sideNavIcon-fontSize: 1.2rem;
 $sideNavDropDownIcon-fontSize: 1rem;
 
 $content-padding: 1rem 2rem;
-$pageTitle-fontSize: 1.8rem;
-$pageTitle-margin: 0 1rem;
+$pagetitlele-fontSize: 1.8rem;
+$pagetitlele-margin: 0 1rem;
 
 $breadcrumb-color: #a5acbc;
 $breadcrumbActive-color: #000;
@@ -56,6 +56,8 @@ $theme-colors: (
   "warning": #f1b44c,
   "success": #70cc47,
   "danger": #f0696a,
+  "light" : #ccc,
+  "dark": #222,
 
 );
 
@@ -341,13 +343,13 @@ a, .btn-link{
     width: calc(100vw - #{$sideNavActive-width});
   }
   & #main-header{
-    & .pg-tit{
+    & .pg-title{
       display: block;
     }
   }
   & #main-content{
     margin-top: $header-height;
-    & .pg-tit{
+    & .pg-title{
       margin-right: 0!important;
       margin-left: 0!important;
       display: none;
@@ -376,12 +378,12 @@ a, .btn-link{
     }
     & #main-header{
       margin-left: $sideNavMini-width;
-      & .pg-tit{
+      & .pg-title{
         display: none;
       }
     }
     & #main-content{
-      & .pg-tit{
+      & .pg-title{
         display: block;
       }
     }
@@ -399,6 +401,7 @@ a, .btn-link{
   left: 0;
   right: 0;
   top:0;
+  z-index: 10;
   box-shadow: 0 1px 6px rgba(0,0,0,0.05);
   & .header-col{
     display: flex;
@@ -476,11 +479,11 @@ a, .btn-link{
   }
   
 }
-.pg-tit{
+.pg-title{
   text-transform: capitalize;
   font-weight: $thick-FontWeight;
-  font-size: $pageTitle-fontSize;
-  margin: $pageTitle-margin;
+  font-size: $pagetitlele-fontSize;
+  margin: $pagetitlele-margin;
 }
 .breadcrumb {
   &.plain-breadcrumb{
@@ -544,6 +547,11 @@ a, .btn-link{
       height: 2.8rem;
       font-size: 1.4rem;
     }
+    &.ico-xl{
+      width: 3.2rem;
+      height: 3.2rem;
+      font-size: 1.6rem;
+    }
     &.has-pulse::after{
       content: '';
       height: 1rem;
@@ -563,6 +571,117 @@ a, .btn-link{
   }
 }
 
+// default Card
+.card{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+  border-color: #d8d8d8;
+}
+
+// Stats Cards
+.card-stats{
+  padding: 1rem .8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  text-transform: capitalize;
+  & .stat-category{
+    margin: 0;
+    color: gray("600");
+    font-size: $sm-fontSize;
+  }
+  & .stat-title{
+    font-weight: $thick-FontWeight;
+    margin-bottom: 0;
+  }
+  & .stats-ico{
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.stats-default{
+    & .stats-ico{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      &.primary-ico{
+        background-color: theme-color-level("primary", -10);
+        color: theme-color("primary");
+      }
+      &.secondary-ico{
+        background-color: theme-color-level("secondary", -10);
+        color: theme-color("secondary");
+      }
+      &.warning-ico{
+        background-color: theme-color-level("warning", -10);
+        color: theme-color("warning");
+      }
+      &.info-ico{
+        background-color: theme-color-level("info", -10);
+        color: theme-color("info");
+      }
+      &.success-ico{
+        background-color: theme-color-level("success", -10);
+        color: theme-color("success");
+      }
+      &.danger-ico{
+        background-color: theme-color-level("danger", -10);
+        color: theme-color("danger");
+      }
+      &.dark-ico{
+        background-color: theme-color-level("dark", -10);
+        color: theme-color("dark");
+      }
+      &.light-ico{
+        background-color: theme-color-level("light", -10);
+        color: theme-color("light");
+      }
+    }
+
+  }
+  
+  &.stats-gradient{
+    margin-top: 2rem;
+    & .stats-ico{
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 2rem;
+      position: relative;
+      top: -3rem;
+      margin-bottom: -3rem;
+      color: $white;
+      border-radius: .3rem;
+      box-shadow: 3px -2px 2px rgba(0,0,0,0.15);
+      &.primary-ico{
+        background-image: linear-gradient(theme-color-level("primary", -4), theme-color("primary"));
+      }
+      &.secondary-ico{
+        background-image: linear-gradient(theme-color-level("secondary", -4), theme-color("secondary"));
+      }
+      &.warning-ico{
+        background-image: linear-gradient(theme-color-level("warning", -4), theme-color("warning"));
+      }
+      &.info-ico{
+        background-image: linear-gradient(theme-color-level("info", -4), theme-color("info"));
+      }
+      &.success-ico{
+        background-image: linear-gradient(theme-color-level("success", -4), theme-color("success"));
+      }
+      &.danger-ico{
+        background-image: linear-gradient(theme-color-level("danger", -4), theme-color("danger"));
+      }
+      &.dark-ico{
+        background-image: linear-gradient(theme-color-level("dark", -4), theme-color("dark"));
+      }
+      &.light-ico{
+        background-image: linear-gradient(theme-color-level("light", -4), theme-color("light"));
+      }
+    }
+
+  }
+}
 
 // Page Content
 
