@@ -20,21 +20,54 @@ let fns ={
             }
         },
         sideNavMobHandler(){
+            var classListBefore, classArrBefore, classListAfter, classArrAfter;
+            try{
+                classListBefore = $("#main-wrapper").attr("class");
+                classArrBefore = classListBefore.split(/\s+/);        
+            }catch{
+
+            }
             $('#side-nav').addClass("side-nav-mob");
             $('#main-wrapper').addClass("content-mob"); 
             $('#side-nav').removeClass("side-nav-mini");
             $('#main-wrapper').removeClass("full-content");
-            if($('#main-wrapper').hasClass("content-mob")){
-                $('.hamburger').removeClass('is-active');
-            }
+            setTimeout(function(){
+                try{
+                    classListAfter = $("#main-wrapper").attr("class");
+                    classArrAfter = classListAfter.split(/\s+/);
+                }catch{
+                
+                }
+                if(!(classArrBefore.includes("content-mob")) && classArrAfter.includes("content-mob")){
+                    $('.hamburger').removeClass('is-active');
+                }
+            }, 500);
         },
         sideNavScreenHandler(){
+            var classListBefore, classArrBefore, classListAfter, classArrAfter;
+            try{
+                classListBefore = $("#main-wrapper").attr("class");
+                classArrBefore = classListBefore.split(/\s+/);        
+            }catch{
+
+            }
             $('#side-nav').removeClass("side-nav-mob");
             $('#side-nav').removeClass("show");
             $('#main-wrapper').removeClass("content-mob");   
-            if(!($('#main-wrapper').hasClass("content-mob"))){
-                $('.hamburger').removeClass('is-active');
-            }
+            setTimeout(function(){
+                try{
+                    classListAfter = $("#main-wrapper").attr("class");
+                    classArrAfter = classListAfter.split(/\s+/);
+                }catch{
+                
+                }
+                if(classArrBefore.includes("content-mob") && classListAfter == ""){
+                    $('.hamburger').removeClass('is-active');
+                }
+            }, 500);
+        },
+        sideNavScreenResizeHandler(){
+
         },
         sideNavFocusHandler(){
             $('#side-nav').on('mouseenter', function(){
