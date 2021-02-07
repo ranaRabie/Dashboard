@@ -10967,7 +10967,7 @@ a:hover, .btn-link:hover {
   height: 100vh;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 
 #side-nav #nav-header {
