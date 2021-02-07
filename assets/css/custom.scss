@@ -177,7 +177,6 @@ a, .btn-link{
   }
 }
 
-
 // SideNav
 #side-nav{
   background-color: theme-color("primary");
@@ -541,6 +540,81 @@ a, .btn-link{
   font-size: $sm-fontSize;
 }
 
+// Buttons
+.btns-wrapper{
+  &.btns-lg{
+    & .btn{
+      min-width: 10rem;
+    }
+  }
+  &.btns-md{
+    & .btn{
+      min-width: 8rem;
+    }
+  }
+  & .btn{
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+  }
+}
+.btn{
+  &.btn-rounded{
+    border-radius: 3rem;
+  }
+}
+
+// Links
+.btn-link{
+  &.link-primary{
+    color: theme-color("primary");
+    &:hover{
+      color: theme-color-level("primary", 5);
+    }
+  }
+  &.link-secondary{
+    color: theme-color("secondary");
+    &:hover{
+      color: theme-color-level("secondary", 5);
+    }
+  }
+  &.link-danger{
+    color: theme-color("danger");
+    &:hover{
+      color: theme-color-level("danger", 5);
+    }
+  }
+  &.link-success{
+    color: theme-color("success");
+    &:hover{
+      color: theme-color-level("success", 5);
+    }
+  }
+  &.link-info{
+    color: theme-color("info");
+    &:hover{
+      color: theme-color-level("info", 5);
+    }
+  }
+  &.link-warning{
+    color: theme-color("warning");
+    &:hover{
+      color: theme-color-level("warning", 5);
+    }
+  }
+  &.link-light{
+    color: theme-color("light");
+    &:hover{
+      color: theme-color-level("light", 5);
+    }
+  }
+  &.link-dark{
+    color: theme-color("dark");
+    &:hover{
+      color: theme-color-level("dark", 5);
+    }
+  }
+}
+
 // Icon Controls
 .ico-controls-wrapper {
   margin: 0 -.2rem;
@@ -592,6 +666,36 @@ a, .btn-link{
     & img{
       width: 100%;
       border-radius: 50%;
+    }
+  }
+}
+
+// Pagination
+.pagination{
+  & .page-link{
+    min-height: 100%;
+  }
+  &.pagination-rounded{
+    & .page-link{
+      width: 2.2rem;
+      height: 2.2rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 .2rem;
+      border-radius: 50%!important;
+    }
+    &.pagination-lg{
+      & .page-link{
+        width: 3.3rem;
+        height: 3.3rem;
+      }
+    }
+    &.pagination-sm{
+      & .page-link{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 }
