@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <titlele>House Matching App</titlele>
+    <title>R | Dashboard</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -39,6 +39,7 @@
                           <a class="dropdown-item" href="buttons.html"><i>b</i> <span class="nav-txt">buttons</span></a>
                           <a class="dropdown-item" href="grid-system.html"><i>gs</i> <span class="nav-txt">grid system</span></a>
                           <a class="dropdown-item" href="panels.html"><i>p</i> <span class="nav-txt">panels</span></a>
+                          <a class="dropdown-item" href="cards.html"><i>c</i> <span class="nav-txt">cards</span></a>
                           <a class="dropdown-item" href="sweet-alert.html"><i>sa</i> <span class="nav-txt">sweet alert</span></a>
                           <a class="dropdown-item" href="notifications.html"><i>n</i> <span class="nav-txt">notifications</span></a>
                           <a class="dropdown-item" href="icons.html"><i>i</i> <span class="nav-txt">icons</span></a>
@@ -105,7 +106,7 @@
                         <span class="line"></span><span class="line"></span><span class="line"></span>
                     </div>
                 </div>
-                <h1 class="pg-title">dashboard</h1>
+                <h1 id="header-tit" class="pg-title"></h1>
             </div>
             <div class="header-col ico-controls-wrapper secondary-controls">
                 <div class="dropdown-blk text-uppercase">
@@ -174,195 +175,16 @@
             </div>
         </header>
         <div id="main-content">
-            <h1 class="pg-title">dashboard</h1>
-            <nav aria-label="breadcrumb">
+            <h1 id="content-tit" class="pg-title">dashboard</h1>
+            <!-- <nav aria-label="breadcrumb">
                 <ol class="breadcrumb plain-breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    <li class="breadcrumb-item"><a >dashboard</a></li>
+                    <li class="breadcrumb-item"><a >components</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">cards</li>
                 </ol>
-            </nav>
+            </nav> -->
             <div id="pg-content">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico primary-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico secondary-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico danger-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico success-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico warning-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico info-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico light-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-default">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico dark-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico primary-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico secondary-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico danger-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico success-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico info-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico warning-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico dark-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-stats stats-gradient">
-                            <div class="stats-data">
-                                <h4 class="stat-title">700</h4>
-                                <p class="stat-category">employess</p>
-                            </div>
-                            <div class="stats-ico light-ico">
-                                <i class="fas fa-users"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <footer id="main-footer">

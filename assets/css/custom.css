@@ -11001,12 +11001,9 @@ a:hover, .btn-link:hover {
   height: calc(100vh - 4.5rem);
 }
 
-#side-nav #nav-list ul li.active {
+#side-nav #nav-list ul li.active > a {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.35rem;
-}
-
-#side-nav #nav-list ul li.active a {
   color: white !important;
 }
 
@@ -11048,7 +11045,7 @@ a:hover, .btn-link:hover {
   color: #fff;
 }
 
-#side-nav #nav-list ul li.dropdown.show a {
+#side-nav #nav-list ul li.dropdown.show > a {
   color: #fff;
 }
 
@@ -11082,6 +11079,10 @@ a:hover, .btn-link:hover {
 
 #side-nav #nav-list ul li.dropdown .dropdown-menu a i {
   font-size: 1rem;
+}
+
+#side-nav #nav-list ul li.dropdown .dropdown-menu a.active {
+  color: #fff;
 }
 
 #side-nav.side-nav-mini {
@@ -11360,19 +11361,41 @@ a:hover, .btn-link:hover {
   margin: 0 1rem;
 }
 
+.pg-sub-title-level-1,
+.pg-sub-title-level-2 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.pg-sub-title-level-1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pg-sub-title-level-2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .breadcrumb.plain-breadcrumb {
   background-color: transparent;
   padding: 0;
   font-size: 0.9rem;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .breadcrumb.plain-breadcrumb .breadcrumb-item::before,
 .breadcrumb.plain-breadcrumb .breadcrumb-item a {
   color: #a5acbc;
+  cursor: default;
 }
 
-.breadcrumb.plain-breadcrumb .breadcrumb-item a:hover {
+.breadcrumb.plain-breadcrumb .breadcrumb-item a[href] {
+  cursor: pointer;
+}
+
+.breadcrumb.plain-breadcrumb .breadcrumb-item a[href]:hover {
   color: #000;
 }
 
@@ -11479,9 +11502,24 @@ a:hover, .btn-link:hover {
           justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   text-transform: capitalize;
+}
+
+.card-stats.card-stats-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.card-stats.card-stats-reverse .stats-data {
+  text-align: end;
+}
+
+.card-stats .stats-data {
+  width: calc(100% - 5rem);
 }
 
 .card-stats .stat-category {
@@ -11510,10 +11548,22 @@ a:hover, .btn-link:hover {
           justify-content: center;
 }
 
+.card-stats .stats-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border-top: 1px solid #dee2e6;
+  font-size: 0.8rem;
+  padding-top: .5rem;
+  margin-top: .5rem;
+  color: #adb5bd;
+}
+
 .card-stats.stats-default .stats-ico {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  font-size: 1.3rem;
 }
 
 .card-stats.stats-default .stats-ico.primary-ico {
@@ -11611,6 +11661,75 @@ a:hover, .btn-link:hover {
 .card-stats.stats-gradient .stats-ico.light-ico {
   background-image: -webkit-gradient(linear, left top, left bottom, from(gainsboro), to(#ccc));
   background-image: linear-gradient(gainsboro, #ccc);
+}
+
+.card-stats.stats-colored {
+  color: #fff;
+}
+
+.card-stats.stats-colored.primary-stat {
+  background-color: #0e1239;
+}
+
+.card-stats.stats-colored.secondary-stat {
+  background-color: #776bfd;
+}
+
+.card-stats.stats-colored.warning-stat {
+  background-color: #f1b44c;
+}
+
+.card-stats.stats-colored.info-stat {
+  background-color: #17a2b8;
+}
+
+.card-stats.stats-colored.success-stat {
+  background-color: #70cc47;
+}
+
+.card-stats.stats-colored.danger-stat {
+  background-color: #f0696a;
+}
+
+.card-stats.stats-colored.dark-stat {
+  background-color: #222;
+}
+
+.card-stats.stats-colored.light-stat {
+  background-color: #ccc;
+  color: #000;
+}
+
+.card-stats.stats-colored.light-stat .stat-category {
+  color: #343a40;
+}
+
+.card-stats.stats-colored.light-stat .stats-ico {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-stats.stats-colored.light-stat .stats-footer {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #343a40;
+}
+
+.card-stats.stats-colored .stats-ico {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.card-stats.stats-colored .stat-category {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-stats.stats-colored .stats-footer {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 a, .btn:before {
