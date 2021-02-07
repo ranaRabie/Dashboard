@@ -11493,34 +11493,15 @@ a:hover, .btn-link:hover {
   color: #141414;
 }
 
-.ico-controls-wrapper {
-  margin: 0 -.2rem;
-}
-
-.ico-controls-wrapper.secondary-controls .ico-control {
-  background-color: #e4e1ff;
-  color: #776bfd;
-}
-
-.ico-controls-wrapper.primary-controls .ico-control {
-  background-color: #cfd0d7;
-  color: #0e1239;
-}
-
-.ico-controls-wrapper.warning-controls .ico-control {
-  background-color: #fcf0db;
-  color: #f1b44c;
-}
-
-.ico-controls-wrapper .ico-control {
+.ico-control {
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.2rem;
   margin: 0 .2rem;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-radius: .4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -11531,21 +11512,117 @@ a:hover, .btn-link:hover {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   position: relative;
+  cursor: pointer;
 }
 
-.ico-controls-wrapper .ico-control.ico-lg {
+.ico-control.ico-rounded {
+  border-radius: 50%;
+}
+
+.ico-control.ico-plain {
+  background-color: transparent !important;
+}
+
+.ico-control.ico-primary {
+  background-color: #cfd0d7;
+  color: #0e1239;
+}
+
+.ico-control.ico-primary:hover {
+  background-color: #a8aab8;
+  color: #0a0c27;
+}
+
+.ico-control.ico-primary.ico-hover:hover {
+  background-color: #0e1239;
+  color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-solid {
+  background-color: #0e1239;
+  color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-solid:hover {
+  background-color: #0b0e2b;
+}
+
+.ico-control.ico-primary.ico-solid.ico-hover:hover {
+  background-color: #cfd0d7;
+  color: #0e1239;
+}
+
+.ico-control.ico-secondary {
+  background-color: #e4e1ff;
+  color: #776bfd;
+}
+
+.ico-control.ico-secondary:hover {
+  background-color: #cecafe;
+  color: #5149ac;
+}
+
+.ico-control.ico-secondary.ico-hover:hover {
+  background-color: #776bfd;
+  color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-solid {
+  background-color: #776bfd;
+  color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-solid:hover {
+  background-color: #5a51c0;
+}
+
+.ico-control.ico-secondary.ico-solid.ico-hover:hover {
+  background-color: #e4e1ff;
+  color: #776bfd;
+}
+
+.ico-control.ico-warning {
+  background-color: #fcf0db;
+  color: #f1b44c;
+}
+
+.ico-control.ico-warning:hover {
+  background-color: #fae4bf;
+  color: #a47a34;
+}
+
+.ico-control.ico-warning.ico-hover:hover {
+  background-color: #f1b44c;
+  color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-solid {
+  background-color: #f1b44c;
+  color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-solid:hover {
+  background-color: #b7893a;
+}
+
+.ico-control.ico-warning.ico-solid.ico-hover:hover {
+  background-color: #fcf0db;
+  color: #f1b44c;
+}
+
+.ico-control.ico-lg {
   width: 2.8rem;
   height: 2.8rem;
   font-size: 1.4rem;
 }
 
-.ico-controls-wrapper .ico-control.ico-xl {
+.ico-control.ico-xl {
   width: 3.2rem;
   height: 3.2rem;
   font-size: 1.6rem;
 }
 
-.ico-controls-wrapper .ico-control.has-pulse::after {
+.ico-control.has-pulse::after {
   content: '';
   height: 1rem;
   width: 1rem;
@@ -11558,7 +11635,7 @@ a:hover, .btn-link:hover {
   display: block;
 }
 
-.ico-controls-wrapper .ico-control img {
+.ico-control img {
   width: 100%;
   border-radius: 50%;
 }
