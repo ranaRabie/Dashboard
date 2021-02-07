@@ -11563,11 +11563,25 @@ a:hover, .btn-link:hover {
   border-radius: 50%;
 }
 
+.pagination .active .page-link {
+  background-color: #0e1239;
+  border-color: #0e1239;
+}
+
 .pagination .page-link {
   min-height: 100%;
 }
 
-.pagination.pagination-rounded .page-link {
+.pagination.pagination-plain .page-item:not(.active) .page-link {
+  border: 0;
+  background-color: transparent;
+}
+
+.pagination.pagination-plain .page-item:not(.active) .page-link:hover {
+  background-color: #e9ecef;
+}
+
+.pagination.pagination-rounded .page-link, .pagination.pagination-plain .page-link {
   width: 2.2rem;
   height: 2.2rem;
   display: -webkit-inline-box;
@@ -11583,14 +11597,19 @@ a:hover, .btn-link:hover {
   border-radius: 50% !important;
 }
 
-.pagination.pagination-rounded.pagination-lg .page-link {
+.pagination.pagination-rounded.pagination-lg .page-link, .pagination.pagination-plain.pagination-lg .page-link {
   width: 3.3rem;
   height: 3.3rem;
 }
 
-.pagination.pagination-rounded.pagination-sm .page-link {
+.pagination.pagination-rounded.pagination-sm .page-link, .pagination.pagination-plain.pagination-sm .page-link {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.pagination.pagination-secondary .active .page-link {
+  background-color: #776bfd;
+  border-color: #776bfd;
 }
 
 .card {

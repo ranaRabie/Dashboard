@@ -672,10 +672,24 @@ a, .btn-link{
 
 // Pagination
 .pagination{
+  & .active .page-link{
+    background-color: theme-color("primary");
+    border-color: theme-color("primary");
+  }
   & .page-link{
     min-height: 100%;
   }
-  &.pagination-rounded{
+  &.pagination-plain{
+    & .page-item:not(.active) .page-link{
+      border:0;
+      background-color: transparent;
+      &:hover{
+        background-color: $pagination-hover-bg;
+      }
+    }
+  }
+  &.pagination-rounded,
+  &.pagination-plain{
     & .page-link{
       width: 2.2rem;
       height: 2.2rem;
@@ -696,6 +710,12 @@ a, .btn-link{
         width: 1.5rem;
         height: 1.5rem;
       }
+    }
+  }
+  &.pagination-secondary{
+    & .active .page-link{
+      background-color: theme-color("secondary");
+      border-color: theme-color("secondary");
     }
   }
 }
