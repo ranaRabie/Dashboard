@@ -564,53 +564,13 @@ a, .btn-link{
 }
 
 // Links
-.btn-link{
-  &.link-primary{
-    color: theme-color("primary");
-    &:hover{
-      color: theme-color-level("primary", 5);
-    }
-  }
-  &.link-secondary{
-    color: theme-color("secondary");
-    &:hover{
-      color: theme-color-level("secondary", 5);
-    }
-  }
-  &.link-danger{
-    color: theme-color("danger");
-    &:hover{
-      color: theme-color-level("danger", 5);
-    }
-  }
-  &.link-success{
-    color: theme-color("success");
-    &:hover{
-      color: theme-color-level("success", 5);
-    }
-  }
-  &.link-info{
-    color: theme-color("info");
-    &:hover{
-      color: theme-color-level("info", 5);
-    }
-  }
-  &.link-warning{
-    color: theme-color("warning");
-    &:hover{
-      color: theme-color-level("warning", 5);
-    }
-  }
-  &.link-light{
-    color: theme-color("light");
-    &:hover{
-      color: theme-color-level("light", 5);
-    }
-  }
-  &.link-dark{
-    color: theme-color("dark");
-    &:hover{
-      color: theme-color-level("dark", 5);
+@each $color, $value in $theme-colors {
+  .btn-link{
+    &.link-#{$color}{
+      color: theme-color($color);
+      &:hover{
+        color: theme-color-level($color, 5);
+      }
     }
   }
 }
@@ -632,80 +592,8 @@ a, .btn-link{
   flex: 0 0 auto;
   position: relative;
   cursor: pointer;
-  &.ico-rounded{
+  &.ico-circle{
     border-radius: 50%;
-  }
-  &.ico-plain{
-    background-color: transparent!important;
-  }
-  &.ico-primary{
-    background-color: theme-color-level("primary", -10);
-    color: theme-color("primary");
-    &:hover{
-      background-color: theme-color-level("primary", -8);
-      color: theme-color-level("primary", 4);
-    }
-    &.ico-hover:hover{
-      background-color: theme-color("primary");
-      color: theme-color-level("primary", -10);
-    }
-    &.ico-solid{
-      background-color: theme-color("primary");
-      color: theme-color-level("primary", -10);
-      &:hover{
-        background-color: theme-color-level("primary", 3);
-      }
-      &.ico-hover:hover{
-        background-color: theme-color-level("primary", -10);
-        color: theme-color("primary");
-      }
-    }
-  }
-  &.ico-secondary{
-    background-color: theme-color-level("secondary", -10);
-    color: theme-color("secondary");
-    &:hover{
-      background-color: theme-color-level("secondary", -8);
-      color: theme-color-level("secondary", 4);
-    }
-    &.ico-hover:hover{
-      background-color: theme-color("secondary");
-      color: theme-color-level("secondary", -10);
-    }
-    &.ico-solid{
-      background-color: theme-color("secondary");
-      color: theme-color-level("secondary", -10);
-      &:hover{
-        background-color: theme-color-level("secondary", 3);
-      }
-      &.ico-hover:hover{
-        background-color: theme-color-level("secondary", -10);
-        color: theme-color("secondary");
-      }
-    }
-  }
-  &.ico-warning{
-    background-color: theme-color-level("warning", -10);
-    color: theme-color("warning");
-    &:hover{
-      background-color: theme-color-level("warning", -8);
-      color: theme-color-level("warning", 4);
-    }
-    &.ico-hover:hover{
-      background-color: theme-color("warning");
-      color: theme-color-level("warning", -10);
-    }
-    &.ico-solid{
-      background-color: theme-color("warning");
-      color: theme-color-level("warning", -10);
-      &:hover{
-        background-color: theme-color-level("warning", 3);
-      }
-      &.ico-hover:hover{
-        background-color: theme-color-level("warning", -10);
-        color: theme-color("warning");
-      }
-    }
   }
   &.ico-lg{
     width: 2.8rem;
@@ -732,6 +620,39 @@ a, .btn-link{
   & img{
     width: 100%;
     border-radius: 50%;
+  }
+}
+@each $color, $value in $theme-colors {
+  .ico-control{
+    &.ico-#{$color} {
+      color: theme-color($color);
+      &:hover{
+        color: theme-color-level($color, 5);
+      }
+      &.ico-square,
+      &.ico-circle{
+        background-color: theme-color-level($color, -10);
+        &:hover{
+          background-color: theme-color-level($color, -7);
+        }
+        &.ico-hover:hover{
+          background-color: theme-color($color);
+          color: theme-color-level($color, -10);
+        }
+        &.ico-solid{
+          background-color: theme-color($color);
+          color: theme-color-level($color, -10);
+          &:hover{
+            background-color: theme-color-level($color, 4);
+          }
+          &.ico-hover:hover{
+            background-color: theme-color-level($color, -10);
+            color: theme-color($color);
+          }
+        }
+      }
+      
+    }
   }
 }
 
@@ -838,40 +759,7 @@ a, .btn-link{
       height: 3rem;
       border-radius: 50%;
       font-size: 1.3rem;
-      &.primary-ico{
-        background-color: theme-color-level("primary", -10);
-        color: theme-color("primary");
-      }
-      &.secondary-ico{
-        background-color: theme-color-level("secondary", -10);
-        color: theme-color("secondary");
-      }
-      &.warning-ico{
-        background-color: theme-color-level("warning", -10);
-        color: theme-color("warning");
-      }
-      &.info-ico{
-        background-color: theme-color-level("info", -10);
-        color: theme-color("info");
-      }
-      &.success-ico{
-        background-color: theme-color-level("success", -10);
-        color: theme-color("success");
-      }
-      &.danger-ico{
-        background-color: theme-color-level("danger", -10);
-        color: theme-color("danger");
-      }
-      &.dark-ico{
-        background-color: theme-color-level("dark", -10);
-        color: theme-color("dark");
-      }
-      &.light-ico{
-        background-color: theme-color-level("light", -10);
-        color: theme-color("light");
-      }
     }
-
   }
   
   &.stats-gradient{
@@ -886,57 +774,57 @@ a, .btn-link{
       color: $white;
       border-radius: .3rem;
       box-shadow: 3px -2px 2px rgba(0,0,0,0.15);
-      &.primary-ico{
-        background-image: linear-gradient(theme-color-level("primary", -4), theme-color("primary"));
-      }
-      &.secondary-ico{
-        background-image: linear-gradient(theme-color-level("secondary", -4), theme-color("secondary"));
-      }
-      &.warning-ico{
-        background-image: linear-gradient(theme-color-level("warning", -4), theme-color("warning"));
-      }
-      &.info-ico{
-        background-image: linear-gradient(theme-color-level("info", -4), theme-color("info"));
-      }
-      &.success-ico{
-        background-image: linear-gradient(theme-color-level("success", -4), theme-color("success"));
-      }
-      &.danger-ico{
-        background-image: linear-gradient(theme-color-level("danger", -4), theme-color("danger"));
-      }
-      &.dark-ico{
-        background-image: linear-gradient(theme-color-level("dark", -4), theme-color("dark"));
-      }
-      &.light-ico{
-        background-image: linear-gradient(theme-color-level("light", -4), theme-color("light"));
-      }
+      // &.primary-ico{
+      //   background-image: linear-gradient(theme-color-level("primary", -4), theme-color("primary"));
+      // }
+      // &.secondary-ico{
+      //   background-image: linear-gradient(theme-color-level("secondary", -4), theme-color("secondary"));
+      // }
+      // &.warning-ico{
+      //   background-image: linear-gradient(theme-color-level("warning", -4), theme-color("warning"));
+      // }
+      // &.info-ico{
+      //   background-image: linear-gradient(theme-color-level("info", -4), theme-color("info"));
+      // }
+      // &.success-ico{
+      //   background-image: linear-gradient(theme-color-level("success", -4), theme-color("success"));
+      // }
+      // &.danger-ico{
+      //   background-image: linear-gradient(theme-color-level("danger", -4), theme-color("danger"));
+      // }
+      // &.dark-ico{
+      //   background-image: linear-gradient(theme-color-level("dark", -4), theme-color("dark"));
+      // }
+      // &.light-ico{
+      //   background-image: linear-gradient(theme-color-level("light", -4), theme-color("light"));
+      // }
     }
 
   }
 
   &.stats-colored{
     color: $white;
-    &.primary-stat{
-      background-color: theme-color("primary");
-    }
-    &.secondary-stat{
-      background-color: theme-color("secondary");
-    }
-    &.warning-stat{
-      background-color: theme-color("warning");
-    }
-    &.info-stat{
-      background-color: theme-color("info");
-    }
-    &.success-stat{
-      background-color: theme-color("success");
-    }
-    &.danger-stat{
-      background-color: theme-color("danger");
-    }
-    &.dark-stat{
-      background-color: theme-color("dark");
-    }
+    // &.primary-stat{
+    //   background-color: theme-color("primary");
+    // }
+    // &.secondary-stat{
+    //   background-color: theme-color("secondary");
+    // }
+    // &.warning-stat{
+    //   background-color: theme-color("warning");
+    // }
+    // &.info-stat{
+    //   background-color: theme-color("info");
+    // }
+    // &.success-stat{
+    //   background-color: theme-color("success");
+    // }
+    // &.danger-stat{
+    //   background-color: theme-color("danger");
+    // }
+    // &.dark-stat{
+    //   background-color: theme-color("dark");
+    // }
     &.light-stat{
       background-color: theme-color("light");
       color: $body-color;
@@ -968,6 +856,23 @@ a, .btn-link{
       color: rgba(255,255,255,0.8);
     }
 
+  }
+}
+@each $color, $value in $theme-colors {
+  .card-stats{
+    &.stats-gradient{
+      & .stats-ico{
+        &.#{$color}-ico{
+          background-image: linear-gradient(theme-color-level($color, -4), theme-color($color));
+        }
+      }
+    }
+  
+    &.stats-colored{
+      &.#{$color}-stat{
+        background-color: theme-color($color);
+      }
+    }
   }
 }
 

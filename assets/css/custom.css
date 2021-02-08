@@ -11445,14 +11445,6 @@ a:hover, .btn-link:hover {
   color: #474098;
 }
 
-.btn-link.link-danger {
-  color: #f0696a;
-}
-
-.btn-link.link-danger:hover {
-  color: #903f40;
-}
-
 .btn-link.link-success {
   color: #70cc47;
 }
@@ -11475,6 +11467,14 @@ a:hover, .btn-link:hover {
 
 .btn-link.link-warning:hover {
   color: #916c2e;
+}
+
+.btn-link.link-danger {
+  color: #f0696a;
+}
+
+.btn-link.link-danger:hover {
+  color: #903f40;
 }
 
 .btn-link.link-light {
@@ -11515,99 +11515,8 @@ a:hover, .btn-link:hover {
   cursor: pointer;
 }
 
-.ico-control.ico-rounded {
+.ico-control.ico-circle {
   border-radius: 50%;
-}
-
-.ico-control.ico-plain {
-  background-color: transparent !important;
-}
-
-.ico-control.ico-primary {
-  background-color: #cfd0d7;
-  color: #0e1239;
-}
-
-.ico-control.ico-primary:hover {
-  background-color: #a8aab8;
-  color: #0a0c27;
-}
-
-.ico-control.ico-primary.ico-hover:hover {
-  background-color: #0e1239;
-  color: #cfd0d7;
-}
-
-.ico-control.ico-primary.ico-solid {
-  background-color: #0e1239;
-  color: #cfd0d7;
-}
-
-.ico-control.ico-primary.ico-solid:hover {
-  background-color: #0b0e2b;
-}
-
-.ico-control.ico-primary.ico-solid.ico-hover:hover {
-  background-color: #cfd0d7;
-  color: #0e1239;
-}
-
-.ico-control.ico-secondary {
-  background-color: #e4e1ff;
-  color: #776bfd;
-}
-
-.ico-control.ico-secondary:hover {
-  background-color: #cecafe;
-  color: #5149ac;
-}
-
-.ico-control.ico-secondary.ico-hover:hover {
-  background-color: #776bfd;
-  color: #e4e1ff;
-}
-
-.ico-control.ico-secondary.ico-solid {
-  background-color: #776bfd;
-  color: #e4e1ff;
-}
-
-.ico-control.ico-secondary.ico-solid:hover {
-  background-color: #5a51c0;
-}
-
-.ico-control.ico-secondary.ico-solid.ico-hover:hover {
-  background-color: #e4e1ff;
-  color: #776bfd;
-}
-
-.ico-control.ico-warning {
-  background-color: #fcf0db;
-  color: #f1b44c;
-}
-
-.ico-control.ico-warning:hover {
-  background-color: #fae4bf;
-  color: #a47a34;
-}
-
-.ico-control.ico-warning.ico-hover:hover {
-  background-color: #f1b44c;
-  color: #fcf0db;
-}
-
-.ico-control.ico-warning.ico-solid {
-  background-color: #f1b44c;
-  color: #fcf0db;
-}
-
-.ico-control.ico-warning.ico-solid:hover {
-  background-color: #b7893a;
-}
-
-.ico-control.ico-warning.ico-solid.ico-hover:hover {
-  background-color: #fcf0db;
-  color: #f1b44c;
 }
 
 .ico-control.ico-lg {
@@ -11638,6 +11547,286 @@ a:hover, .btn-link:hover {
 .ico-control img {
   width: 100%;
   border-radius: 50%;
+}
+
+.ico-control.ico-primary {
+  color: #0e1239;
+}
+
+.ico-control.ico-primary:hover {
+  color: #080b22;
+}
+
+.ico-control.ico-primary.ico-square, .ico-control.ico-primary.ico-circle {
+  background-color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-square:hover, .ico-control.ico-primary.ico-circle:hover {
+  background-color: #9597a8;
+}
+
+.ico-control.ico-primary.ico-square.ico-hover:hover, .ico-control.ico-primary.ico-circle.ico-hover:hover {
+  background-color: #0e1239;
+  color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-square.ico-solid, .ico-control.ico-primary.ico-circle.ico-solid {
+  background-color: #0e1239;
+  color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-square.ico-solid:hover, .ico-control.ico-primary.ico-circle.ico-solid:hover {
+  background-color: #0a0c27;
+}
+
+.ico-control.ico-primary.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-primary.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #cfd0d7;
+  color: #0e1239;
+}
+
+.ico-control.ico-secondary {
+  color: #776bfd;
+}
+
+.ico-control.ico-secondary:hover {
+  color: #474098;
+}
+
+.ico-control.ico-secondary.ico-square, .ico-control.ico-secondary.ico-circle {
+  background-color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-square:hover, .ico-control.ico-secondary.ico-circle:hover {
+  background-color: #c3befe;
+}
+
+.ico-control.ico-secondary.ico-square.ico-hover:hover, .ico-control.ico-secondary.ico-circle.ico-hover:hover {
+  background-color: #776bfd;
+  color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-square.ico-solid, .ico-control.ico-secondary.ico-circle.ico-solid {
+  background-color: #776bfd;
+  color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-square.ico-solid:hover, .ico-control.ico-secondary.ico-circle.ico-solid:hover {
+  background-color: #5149ac;
+}
+
+.ico-control.ico-secondary.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-secondary.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #e4e1ff;
+  color: #776bfd;
+}
+
+.ico-control.ico-success {
+  color: #70cc47;
+}
+
+.ico-control.ico-success:hover {
+  color: #437a2b;
+}
+
+.ico-control.ico-success.ico-square, .ico-control.ico-success.ico-circle {
+  background-color: #e2f5da;
+}
+
+.ico-control.ico-success.ico-square:hover, .ico-control.ico-success.ico-circle:hover {
+  background-color: #c0e9ae;
+}
+
+.ico-control.ico-success.ico-square.ico-hover:hover, .ico-control.ico-success.ico-circle.ico-hover:hover {
+  background-color: #70cc47;
+  color: #e2f5da;
+}
+
+.ico-control.ico-success.ico-square.ico-solid, .ico-control.ico-success.ico-circle.ico-solid {
+  background-color: #70cc47;
+  color: #e2f5da;
+}
+
+.ico-control.ico-success.ico-square.ico-solid:hover, .ico-control.ico-success.ico-circle.ico-solid:hover {
+  background-color: #4c8b30;
+}
+
+.ico-control.ico-success.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-success.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #e2f5da;
+  color: #70cc47;
+}
+
+.ico-control.ico-info {
+  color: #17a2b8;
+}
+
+.ico-control.ico-info:hover {
+  color: #0e616e;
+}
+
+.ico-control.ico-info.ico-square, .ico-control.ico-info.ico-circle {
+  background-color: #d1ecf1;
+}
+
+.ico-control.ico-info.ico-square:hover, .ico-control.ico-info.ico-circle:hover {
+  background-color: #99d6e0;
+}
+
+.ico-control.ico-info.ico-square.ico-hover:hover, .ico-control.ico-info.ico-circle.ico-hover:hover {
+  background-color: #17a2b8;
+  color: #d1ecf1;
+}
+
+.ico-control.ico-info.ico-square.ico-solid, .ico-control.ico-info.ico-circle.ico-solid {
+  background-color: #17a2b8;
+  color: #d1ecf1;
+}
+
+.ico-control.ico-info.ico-square.ico-solid:hover, .ico-control.ico-info.ico-circle.ico-solid:hover {
+  background-color: #106e7d;
+}
+
+.ico-control.ico-info.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-info.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #d1ecf1;
+  color: #17a2b8;
+}
+
+.ico-control.ico-warning {
+  color: #f1b44c;
+}
+
+.ico-control.ico-warning:hover {
+  color: #916c2e;
+}
+
+.ico-control.ico-warning.ico-square, .ico-control.ico-warning.ico-circle {
+  background-color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-square:hover, .ico-control.ico-warning.ico-circle:hover {
+  background-color: #f9deb0;
+}
+
+.ico-control.ico-warning.ico-square.ico-hover:hover, .ico-control.ico-warning.ico-circle.ico-hover:hover {
+  background-color: #f1b44c;
+  color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-square.ico-solid, .ico-control.ico-warning.ico-circle.ico-solid {
+  background-color: #f1b44c;
+  color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-square.ico-solid:hover, .ico-control.ico-warning.ico-circle.ico-solid:hover {
+  background-color: #a47a34;
+}
+
+.ico-control.ico-warning.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-warning.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #fcf0db;
+  color: #f1b44c;
+}
+
+.ico-control.ico-danger {
+  color: #f0696a;
+}
+
+.ico-control.ico-danger:hover {
+  color: #903f40;
+}
+
+.ico-control.ico-danger.ico-square, .ico-control.ico-danger.ico-circle {
+  background-color: #fce1e1;
+}
+
+.ico-control.ico-danger.ico-square:hover, .ico-control.ico-danger.ico-circle:hover {
+  background-color: #f8bdbd;
+}
+
+.ico-control.ico-danger.ico-square.ico-hover:hover, .ico-control.ico-danger.ico-circle.ico-hover:hover {
+  background-color: #f0696a;
+  color: #fce1e1;
+}
+
+.ico-control.ico-danger.ico-square.ico-solid, .ico-control.ico-danger.ico-circle.ico-solid {
+  background-color: #f0696a;
+  color: #fce1e1;
+}
+
+.ico-control.ico-danger.ico-square.ico-solid:hover, .ico-control.ico-danger.ico-circle.ico-solid:hover {
+  background-color: #a34748;
+}
+
+.ico-control.ico-danger.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-danger.ico-circle.ico-solid.ico-hover:hover {
+  background-color: #fce1e1;
+  color: #f0696a;
+}
+
+.ico-control.ico-light {
+  color: #ccc;
+}
+
+.ico-control.ico-light:hover {
+  color: #7a7a7a;
+}
+
+.ico-control.ico-light.ico-square, .ico-control.ico-light.ico-circle {
+  background-color: whitesmoke;
+}
+
+.ico-control.ico-light.ico-square:hover, .ico-control.ico-light.ico-circle:hover {
+  background-color: #e9e9e9;
+}
+
+.ico-control.ico-light.ico-square.ico-hover:hover, .ico-control.ico-light.ico-circle.ico-hover:hover {
+  background-color: #ccc;
+  color: whitesmoke;
+}
+
+.ico-control.ico-light.ico-square.ico-solid, .ico-control.ico-light.ico-circle.ico-solid {
+  background-color: #ccc;
+  color: whitesmoke;
+}
+
+.ico-control.ico-light.ico-square.ico-solid:hover, .ico-control.ico-light.ico-circle.ico-solid:hover {
+  background-color: #8b8b8b;
+}
+
+.ico-control.ico-light.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-light.ico-circle.ico-solid.ico-hover:hover {
+  background-color: whitesmoke;
+  color: #ccc;
+}
+
+.ico-control.ico-dark {
+  color: #222;
+}
+
+.ico-control.ico-dark:hover {
+  color: #141414;
+}
+
+.ico-control.ico-dark.ico-square, .ico-control.ico-dark.ico-circle {
+  background-color: lightgray;
+}
+
+.ico-control.ico-dark.ico-square:hover, .ico-control.ico-dark.ico-circle:hover {
+  background-color: #9e9e9e;
+}
+
+.ico-control.ico-dark.ico-square.ico-hover:hover, .ico-control.ico-dark.ico-circle.ico-hover:hover {
+  background-color: #222;
+  color: lightgray;
+}
+
+.ico-control.ico-dark.ico-square.ico-solid, .ico-control.ico-dark.ico-circle.ico-solid {
+  background-color: #222;
+  color: lightgray;
+}
+
+.ico-control.ico-dark.ico-square.ico-solid:hover, .ico-control.ico-dark.ico-circle.ico-solid:hover {
+  background-color: #171717;
+}
+
+.ico-control.ico-dark.ico-square.ico-solid.ico-hover:hover, .ico-control.ico-dark.ico-circle.ico-solid.ico-hover:hover {
+  background-color: lightgray;
+  color: #222;
 }
 
 .pagination .active .page-link {
@@ -11773,46 +11962,6 @@ a:hover, .btn-link:hover {
   font-size: 1.3rem;
 }
 
-.card-stats.stats-default .stats-ico.primary-ico {
-  background-color: #cfd0d7;
-  color: #0e1239;
-}
-
-.card-stats.stats-default .stats-ico.secondary-ico {
-  background-color: #e4e1ff;
-  color: #776bfd;
-}
-
-.card-stats.stats-default .stats-ico.warning-ico {
-  background-color: #fcf0db;
-  color: #f1b44c;
-}
-
-.card-stats.stats-default .stats-ico.info-ico {
-  background-color: #d1ecf1;
-  color: #17a2b8;
-}
-
-.card-stats.stats-default .stats-ico.success-ico {
-  background-color: #e2f5da;
-  color: #70cc47;
-}
-
-.card-stats.stats-default .stats-ico.danger-ico {
-  background-color: #fce1e1;
-  color: #f0696a;
-}
-
-.card-stats.stats-default .stats-ico.dark-ico {
-  background-color: lightgray;
-  color: #222;
-}
-
-.card-stats.stats-default .stats-ico.light-ico {
-  background-color: whitesmoke;
-  color: #ccc;
-}
-
 .card-stats.stats-gradient {
   margin-top: 2rem;
 }
@@ -11830,76 +11979,8 @@ a:hover, .btn-link:hover {
           box-shadow: 3px -2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.card-stats.stats-gradient .stats-ico.primary-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b5e78), to(#0e1239));
-  background-image: linear-gradient(#5b5e78, #0e1239);
-}
-
-.card-stats.stats-gradient .stats-ico.secondary-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a39afe), to(#776bfd));
-  background-image: linear-gradient(#a39afe, #776bfd);
-}
-
-.card-stats.stats-gradient .stats-ico.warning-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5cc85), to(#f1b44c));
-  background-image: linear-gradient(#f5cc85, #f1b44c);
-}
-
-.card-stats.stats-gradient .stats-ico.info-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#61c0cf), to(#17a2b8));
-  background-image: linear-gradient(#61c0cf, #17a2b8);
-}
-
-.card-stats.stats-gradient .stats-ico.success-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9edc82), to(#70cc47));
-  background-image: linear-gradient(#9edc82, #70cc47);
-}
-
-.card-stats.stats-gradient .stats-ico.danger-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5999a), to(#f0696a));
-  background-image: linear-gradient(#f5999a, #f0696a);
-}
-
-.card-stats.stats-gradient .stats-ico.dark-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(dimgray), to(#222));
-  background-image: linear-gradient(dimgray, #222);
-}
-
-.card-stats.stats-gradient .stats-ico.light-ico {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(gainsboro), to(#ccc));
-  background-image: linear-gradient(gainsboro, #ccc);
-}
-
 .card-stats.stats-colored {
   color: #fff;
-}
-
-.card-stats.stats-colored.primary-stat {
-  background-color: #0e1239;
-}
-
-.card-stats.stats-colored.secondary-stat {
-  background-color: #776bfd;
-}
-
-.card-stats.stats-colored.warning-stat {
-  background-color: #f1b44c;
-}
-
-.card-stats.stats-colored.info-stat {
-  background-color: #17a2b8;
-}
-
-.card-stats.stats-colored.success-stat {
-  background-color: #70cc47;
-}
-
-.card-stats.stats-colored.danger-stat {
-  background-color: #f0696a;
-}
-
-.card-stats.stats-colored.dark-stat {
-  background-color: #222;
 }
 
 .card-stats.stats-colored.light-stat {
@@ -11937,6 +12018,78 @@ a:hover, .btn-link:hover {
 .card-stats.stats-colored .stats-footer {
   border-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.card-stats.stats-gradient .stats-ico.primary-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b5e78), to(#0e1239));
+  background-image: linear-gradient(#5b5e78, #0e1239);
+}
+
+.card-stats.stats-colored.primary-stat {
+  background-color: #0e1239;
+}
+
+.card-stats.stats-gradient .stats-ico.secondary-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a39afe), to(#776bfd));
+  background-image: linear-gradient(#a39afe, #776bfd);
+}
+
+.card-stats.stats-colored.secondary-stat {
+  background-color: #776bfd;
+}
+
+.card-stats.stats-gradient .stats-ico.success-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9edc82), to(#70cc47));
+  background-image: linear-gradient(#9edc82, #70cc47);
+}
+
+.card-stats.stats-colored.success-stat {
+  background-color: #70cc47;
+}
+
+.card-stats.stats-gradient .stats-ico.info-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#61c0cf), to(#17a2b8));
+  background-image: linear-gradient(#61c0cf, #17a2b8);
+}
+
+.card-stats.stats-colored.info-stat {
+  background-color: #17a2b8;
+}
+
+.card-stats.stats-gradient .stats-ico.warning-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5cc85), to(#f1b44c));
+  background-image: linear-gradient(#f5cc85, #f1b44c);
+}
+
+.card-stats.stats-colored.warning-stat {
+  background-color: #f1b44c;
+}
+
+.card-stats.stats-gradient .stats-ico.danger-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5999a), to(#f0696a));
+  background-image: linear-gradient(#f5999a, #f0696a);
+}
+
+.card-stats.stats-colored.danger-stat {
+  background-color: #f0696a;
+}
+
+.card-stats.stats-gradient .stats-ico.light-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(gainsboro), to(#ccc));
+  background-image: linear-gradient(gainsboro, #ccc);
+}
+
+.card-stats.stats-colored.light-stat {
+  background-color: #ccc;
+}
+
+.card-stats.stats-gradient .stats-ico.dark-ico {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(dimgray), to(#222));
+  background-image: linear-gradient(dimgray, #222);
+}
+
+.card-stats.stats-colored.dark-stat {
+  background-color: #222;
 }
 
 a, .btn:before {
