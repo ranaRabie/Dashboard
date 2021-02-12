@@ -199,7 +199,8 @@ a, .btn-link{
       margin-right: $logoShape-marginRight;
     }
     & .logo-txt{
-      height: $logo-height;
+      height: auto;
+      max-width: 50%;
     }
   }
   & #nav-list ul{
@@ -576,10 +577,9 @@ a, .btn-link{
 }
 
 // Icon Controls
-// .ico-controls-wrapper {
-//   margin: 0 -.2rem;
-//   & 
-// }
+.ico-controls-wrapper {
+  margin: 0 -.2rem; 
+}
 .ico-control{
   width: 2.5rem;
   height: 2.5rem;
@@ -592,18 +592,47 @@ a, .btn-link{
   flex: 0 0 auto;
   position: relative;
   cursor: pointer;
+  &:not(a):not(button){
+    pointer-events: none;
+  }
   &.ico-circle{
     border-radius: 50%;
+  }
+  &.ico-xs{
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: .9rem;
+    & img,
+    & svg{
+      padding: .5rem;
+    }
+  }
+  &.ico-sm{
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    & img,
+    & svg{
+      padding: .55rem;
+    }
   }
   &.ico-lg{
     width: 2.8rem;
     height: 2.8rem;
     font-size: 1.4rem;
+    & img,
+    & svg{
+      padding: .7rem;
+    }
   }
   &.ico-xl{
     width: 3.2rem;
     height: 3.2rem;
     font-size: 1.6rem;
+    & img,
+    & svg{
+      padding: .75rem;
+    }
   }
   &.has-pulse::after{
     content: '';
@@ -617,15 +646,22 @@ a, .btn-link{
     border: 2px solid #fff;
     display: block;
   }
-  & img{
+  & img,
+  & svg{
     width: 100%;
-    border-radius: 50%;
+    padding: .65rem;
   }
 }
 @each $color, $value in $theme-colors {
   .ico-control{
     &.ico-#{$color} {
       color: theme-color($color);
+      & svg{
+        fill: theme-color($color);
+        &:hover{
+          fill: theme-color-level($color, 5);
+        }
+      }
       &:hover{
         color: theme-color-level($color, 5);
       }
@@ -638,70 +674,28 @@ a, .btn-link{
         &.ico-hover:hover{
           background-color: theme-color($color);
           color: theme-color-level($color, -10);
+          & svg{
+            fill: theme-color-level($color, -10);
+          }
         }
         &.ico-solid{
           background-color: theme-color($color);
           color: theme-color-level($color, -10);
+          & svg{
+            fill: theme-color-level($color, -10);
+          }
           &:hover{
             background-color: theme-color-level($color, 4);
           }
           &.ico-hover:hover{
             background-color: theme-color-level($color, -10);
             color: theme-color($color);
+            & svg{
+              fill: theme-color($color);
+            }
           }
         }
       }
-      
-    }
-  }
-}
-
-// Pagination
-.pagination{
-  & .active .page-link{
-    background-color: theme-color("primary");
-    border-color: theme-color("primary");
-  }
-  & .page-link{
-    min-height: 100%;
-  }
-  &.pagination-plain{
-    & .page-item:not(.active) .page-link{
-      border:0;
-      background-color: transparent;
-      &:hover{
-        background-color: $pagination-hover-bg;
-      }
-    }
-  }
-  &.pagination-rounded,
-  &.pagination-plain{
-    & .page-link{
-      width: 2.2rem;
-      height: 2.2rem;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 .2rem;
-      border-radius: 50%!important;
-    }
-    &.pagination-lg{
-      & .page-link{
-        width: 3.3rem;
-        height: 3.3rem;
-      }
-    }
-    &.pagination-sm{
-      & .page-link{
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-    }
-  }
-  &.pagination-secondary{
-    & .active .page-link{
-      background-color: theme-color("secondary");
-      border-color: theme-color("secondary");
     }
   }
 }
@@ -774,57 +768,11 @@ a, .btn-link{
       color: $white;
       border-radius: .3rem;
       box-shadow: 3px -2px 2px rgba(0,0,0,0.15);
-      // &.primary-ico{
-      //   background-image: linear-gradient(theme-color-level("primary", -4), theme-color("primary"));
-      // }
-      // &.secondary-ico{
-      //   background-image: linear-gradient(theme-color-level("secondary", -4), theme-color("secondary"));
-      // }
-      // &.warning-ico{
-      //   background-image: linear-gradient(theme-color-level("warning", -4), theme-color("warning"));
-      // }
-      // &.info-ico{
-      //   background-image: linear-gradient(theme-color-level("info", -4), theme-color("info"));
-      // }
-      // &.success-ico{
-      //   background-image: linear-gradient(theme-color-level("success", -4), theme-color("success"));
-      // }
-      // &.danger-ico{
-      //   background-image: linear-gradient(theme-color-level("danger", -4), theme-color("danger"));
-      // }
-      // &.dark-ico{
-      //   background-image: linear-gradient(theme-color-level("dark", -4), theme-color("dark"));
-      // }
-      // &.light-ico{
-      //   background-image: linear-gradient(theme-color-level("light", -4), theme-color("light"));
-      // }
     }
-
   }
 
   &.stats-colored{
     color: $white;
-    // &.primary-stat{
-    //   background-color: theme-color("primary");
-    // }
-    // &.secondary-stat{
-    //   background-color: theme-color("secondary");
-    // }
-    // &.warning-stat{
-    //   background-color: theme-color("warning");
-    // }
-    // &.info-stat{
-    //   background-color: theme-color("info");
-    // }
-    // &.success-stat{
-    //   background-color: theme-color("success");
-    // }
-    // &.danger-stat{
-    //   background-color: theme-color("danger");
-    // }
-    // &.dark-stat{
-    //   background-color: theme-color("dark");
-    // }
     &.light-stat{
       background-color: theme-color("light");
       color: $body-color;
@@ -834,6 +782,9 @@ a, .btn-link{
       & .stats-ico{
         color: gray("900");
         background-color: rgba(0, 0, 0, 0.1);
+        & svg{
+          fill: gray("900");
+        }
       }
       & .stats-footer{
         border-color: rgba(0, 0, 0, 0.2);
@@ -857,6 +808,16 @@ a, .btn-link{
     }
 
   }
+
+  &.stats-gradient,
+  &.stats-colored{
+    & .stats-ico{
+      & img,
+      & svg{
+        width: 60%;
+      }
+    }
+  }
 }
 @each $color, $value in $theme-colors {
   .card-stats{
@@ -864,6 +825,9 @@ a, .btn-link{
       & .stats-ico{
         &.#{$color}-ico{
           background-image: linear-gradient(theme-color-level($color, -4), theme-color($color));
+          & svg{
+            fill: $white;
+          }
         }
       }
     }
@@ -871,13 +835,65 @@ a, .btn-link{
     &.stats-colored{
       &.#{$color}-stat{
         background-color: theme-color($color);
+        & svg{
+          fill: $white;
+        }
       }
     }
   }
 }
 
-// Page Content
+// Pagination
+.pagination{
+  & .active .page-link{
+    background-color: theme-color("primary");
+    border-color: theme-color("primary");
+  }
+  & .page-link{
+    min-height: 100%;
+  }
+  &.pagination-plain{
+    & .page-item:not(.active) .page-link{
+      border:0;
+      background-color: transparent;
+      &:hover{
+        background-color: $pagination-hover-bg;
+      }
+    }
+  }
+  &.pagination-rounded,
+  &.pagination-plain{
+    & .page-link{
+      width: 2.2rem;
+      height: 2.2rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 .2rem;
+      border-radius: 50%!important;
+    }
+    &.pagination-lg{
+      & .page-link{
+        width: 3.3rem;
+        height: 3.3rem;
+      }
+    }
+    &.pagination-sm{
+      & .page-link{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+  &.pagination-secondary{
+    & .active .page-link{
+      background-color: theme-color("secondary");
+      border-color: theme-color("secondary");
+    }
+  }
+}
 
+// Page Content
 a, .btn:before{
   transition: $main-transition;
 }

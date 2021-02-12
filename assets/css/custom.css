@@ -10991,7 +10991,8 @@ a:hover, .btn-link:hover {
 }
 
 #side-nav #nav-header .logo-txt {
-  height: 2rem;
+  height: auto;
+  max-width: 50%;
 }
 
 #side-nav #nav-list ul {
@@ -11493,6 +11494,10 @@ a:hover, .btn-link:hover {
   color: #141414;
 }
 
+.ico-controls-wrapper {
+  margin: 0 -.2rem;
+}
+
 .ico-control {
   width: 2.5rem;
   height: 2.5rem;
@@ -11515,8 +11520,34 @@ a:hover, .btn-link:hover {
   cursor: pointer;
 }
 
+.ico-control:not(a):not(button) {
+  pointer-events: none;
+}
+
 .ico-control.ico-circle {
   border-radius: 50%;
+}
+
+.ico-control.ico-xs {
+  width: 1.9rem;
+  height: 1.9rem;
+  font-size: .9rem;
+}
+
+.ico-control.ico-xs img,
+.ico-control.ico-xs svg {
+  padding: .5rem;
+}
+
+.ico-control.ico-sm {
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+}
+
+.ico-control.ico-sm img,
+.ico-control.ico-sm svg {
+  padding: .55rem;
 }
 
 .ico-control.ico-lg {
@@ -11525,10 +11556,20 @@ a:hover, .btn-link:hover {
   font-size: 1.4rem;
 }
 
+.ico-control.ico-lg img,
+.ico-control.ico-lg svg {
+  padding: .7rem;
+}
+
 .ico-control.ico-xl {
   width: 3.2rem;
   height: 3.2rem;
   font-size: 1.6rem;
+}
+
+.ico-control.ico-xl img,
+.ico-control.ico-xl svg {
+  padding: .75rem;
 }
 
 .ico-control.has-pulse::after {
@@ -11544,13 +11585,22 @@ a:hover, .btn-link:hover {
   display: block;
 }
 
-.ico-control img {
+.ico-control img,
+.ico-control svg {
   width: 100%;
-  border-radius: 50%;
+  padding: .65rem;
 }
 
 .ico-control.ico-primary {
   color: #0e1239;
+}
+
+.ico-control.ico-primary svg {
+  fill: #0e1239;
+}
+
+.ico-control.ico-primary svg:hover {
+  fill: #080b22;
 }
 
 .ico-control.ico-primary:hover {
@@ -11570,9 +11620,17 @@ a:hover, .btn-link:hover {
   color: #cfd0d7;
 }
 
+.ico-control.ico-primary.ico-square.ico-hover:hover svg, .ico-control.ico-primary.ico-circle.ico-hover:hover svg {
+  fill: #cfd0d7;
+}
+
 .ico-control.ico-primary.ico-square.ico-solid, .ico-control.ico-primary.ico-circle.ico-solid {
   background-color: #0e1239;
   color: #cfd0d7;
+}
+
+.ico-control.ico-primary.ico-square.ico-solid svg, .ico-control.ico-primary.ico-circle.ico-solid svg {
+  fill: #cfd0d7;
 }
 
 .ico-control.ico-primary.ico-square.ico-solid:hover, .ico-control.ico-primary.ico-circle.ico-solid:hover {
@@ -11584,8 +11642,20 @@ a:hover, .btn-link:hover {
   color: #0e1239;
 }
 
+.ico-control.ico-primary.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-primary.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #0e1239;
+}
+
 .ico-control.ico-secondary {
   color: #776bfd;
+}
+
+.ico-control.ico-secondary svg {
+  fill: #776bfd;
+}
+
+.ico-control.ico-secondary svg:hover {
+  fill: #474098;
 }
 
 .ico-control.ico-secondary:hover {
@@ -11605,9 +11675,17 @@ a:hover, .btn-link:hover {
   color: #e4e1ff;
 }
 
+.ico-control.ico-secondary.ico-square.ico-hover:hover svg, .ico-control.ico-secondary.ico-circle.ico-hover:hover svg {
+  fill: #e4e1ff;
+}
+
 .ico-control.ico-secondary.ico-square.ico-solid, .ico-control.ico-secondary.ico-circle.ico-solid {
   background-color: #776bfd;
   color: #e4e1ff;
+}
+
+.ico-control.ico-secondary.ico-square.ico-solid svg, .ico-control.ico-secondary.ico-circle.ico-solid svg {
+  fill: #e4e1ff;
 }
 
 .ico-control.ico-secondary.ico-square.ico-solid:hover, .ico-control.ico-secondary.ico-circle.ico-solid:hover {
@@ -11619,8 +11697,20 @@ a:hover, .btn-link:hover {
   color: #776bfd;
 }
 
+.ico-control.ico-secondary.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-secondary.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #776bfd;
+}
+
 .ico-control.ico-success {
   color: #70cc47;
+}
+
+.ico-control.ico-success svg {
+  fill: #70cc47;
+}
+
+.ico-control.ico-success svg:hover {
+  fill: #437a2b;
 }
 
 .ico-control.ico-success:hover {
@@ -11640,9 +11730,17 @@ a:hover, .btn-link:hover {
   color: #e2f5da;
 }
 
+.ico-control.ico-success.ico-square.ico-hover:hover svg, .ico-control.ico-success.ico-circle.ico-hover:hover svg {
+  fill: #e2f5da;
+}
+
 .ico-control.ico-success.ico-square.ico-solid, .ico-control.ico-success.ico-circle.ico-solid {
   background-color: #70cc47;
   color: #e2f5da;
+}
+
+.ico-control.ico-success.ico-square.ico-solid svg, .ico-control.ico-success.ico-circle.ico-solid svg {
+  fill: #e2f5da;
 }
 
 .ico-control.ico-success.ico-square.ico-solid:hover, .ico-control.ico-success.ico-circle.ico-solid:hover {
@@ -11654,8 +11752,20 @@ a:hover, .btn-link:hover {
   color: #70cc47;
 }
 
+.ico-control.ico-success.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-success.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #70cc47;
+}
+
 .ico-control.ico-info {
   color: #17a2b8;
+}
+
+.ico-control.ico-info svg {
+  fill: #17a2b8;
+}
+
+.ico-control.ico-info svg:hover {
+  fill: #0e616e;
 }
 
 .ico-control.ico-info:hover {
@@ -11675,9 +11785,17 @@ a:hover, .btn-link:hover {
   color: #d1ecf1;
 }
 
+.ico-control.ico-info.ico-square.ico-hover:hover svg, .ico-control.ico-info.ico-circle.ico-hover:hover svg {
+  fill: #d1ecf1;
+}
+
 .ico-control.ico-info.ico-square.ico-solid, .ico-control.ico-info.ico-circle.ico-solid {
   background-color: #17a2b8;
   color: #d1ecf1;
+}
+
+.ico-control.ico-info.ico-square.ico-solid svg, .ico-control.ico-info.ico-circle.ico-solid svg {
+  fill: #d1ecf1;
 }
 
 .ico-control.ico-info.ico-square.ico-solid:hover, .ico-control.ico-info.ico-circle.ico-solid:hover {
@@ -11689,8 +11807,20 @@ a:hover, .btn-link:hover {
   color: #17a2b8;
 }
 
+.ico-control.ico-info.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-info.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #17a2b8;
+}
+
 .ico-control.ico-warning {
   color: #f1b44c;
+}
+
+.ico-control.ico-warning svg {
+  fill: #f1b44c;
+}
+
+.ico-control.ico-warning svg:hover {
+  fill: #916c2e;
 }
 
 .ico-control.ico-warning:hover {
@@ -11710,9 +11840,17 @@ a:hover, .btn-link:hover {
   color: #fcf0db;
 }
 
+.ico-control.ico-warning.ico-square.ico-hover:hover svg, .ico-control.ico-warning.ico-circle.ico-hover:hover svg {
+  fill: #fcf0db;
+}
+
 .ico-control.ico-warning.ico-square.ico-solid, .ico-control.ico-warning.ico-circle.ico-solid {
   background-color: #f1b44c;
   color: #fcf0db;
+}
+
+.ico-control.ico-warning.ico-square.ico-solid svg, .ico-control.ico-warning.ico-circle.ico-solid svg {
+  fill: #fcf0db;
 }
 
 .ico-control.ico-warning.ico-square.ico-solid:hover, .ico-control.ico-warning.ico-circle.ico-solid:hover {
@@ -11724,8 +11862,20 @@ a:hover, .btn-link:hover {
   color: #f1b44c;
 }
 
+.ico-control.ico-warning.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-warning.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #f1b44c;
+}
+
 .ico-control.ico-danger {
   color: #f0696a;
+}
+
+.ico-control.ico-danger svg {
+  fill: #f0696a;
+}
+
+.ico-control.ico-danger svg:hover {
+  fill: #903f40;
 }
 
 .ico-control.ico-danger:hover {
@@ -11745,9 +11895,17 @@ a:hover, .btn-link:hover {
   color: #fce1e1;
 }
 
+.ico-control.ico-danger.ico-square.ico-hover:hover svg, .ico-control.ico-danger.ico-circle.ico-hover:hover svg {
+  fill: #fce1e1;
+}
+
 .ico-control.ico-danger.ico-square.ico-solid, .ico-control.ico-danger.ico-circle.ico-solid {
   background-color: #f0696a;
   color: #fce1e1;
+}
+
+.ico-control.ico-danger.ico-square.ico-solid svg, .ico-control.ico-danger.ico-circle.ico-solid svg {
+  fill: #fce1e1;
 }
 
 .ico-control.ico-danger.ico-square.ico-solid:hover, .ico-control.ico-danger.ico-circle.ico-solid:hover {
@@ -11759,8 +11917,20 @@ a:hover, .btn-link:hover {
   color: #f0696a;
 }
 
+.ico-control.ico-danger.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-danger.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #f0696a;
+}
+
 .ico-control.ico-light {
   color: #ccc;
+}
+
+.ico-control.ico-light svg {
+  fill: #ccc;
+}
+
+.ico-control.ico-light svg:hover {
+  fill: #7a7a7a;
 }
 
 .ico-control.ico-light:hover {
@@ -11780,9 +11950,17 @@ a:hover, .btn-link:hover {
   color: whitesmoke;
 }
 
+.ico-control.ico-light.ico-square.ico-hover:hover svg, .ico-control.ico-light.ico-circle.ico-hover:hover svg {
+  fill: whitesmoke;
+}
+
 .ico-control.ico-light.ico-square.ico-solid, .ico-control.ico-light.ico-circle.ico-solid {
   background-color: #ccc;
   color: whitesmoke;
+}
+
+.ico-control.ico-light.ico-square.ico-solid svg, .ico-control.ico-light.ico-circle.ico-solid svg {
+  fill: whitesmoke;
 }
 
 .ico-control.ico-light.ico-square.ico-solid:hover, .ico-control.ico-light.ico-circle.ico-solid:hover {
@@ -11794,8 +11972,20 @@ a:hover, .btn-link:hover {
   color: #ccc;
 }
 
+.ico-control.ico-light.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-light.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #ccc;
+}
+
 .ico-control.ico-dark {
   color: #222;
+}
+
+.ico-control.ico-dark svg {
+  fill: #222;
+}
+
+.ico-control.ico-dark svg:hover {
+  fill: #141414;
 }
 
 .ico-control.ico-dark:hover {
@@ -11815,9 +12005,17 @@ a:hover, .btn-link:hover {
   color: lightgray;
 }
 
+.ico-control.ico-dark.ico-square.ico-hover:hover svg, .ico-control.ico-dark.ico-circle.ico-hover:hover svg {
+  fill: lightgray;
+}
+
 .ico-control.ico-dark.ico-square.ico-solid, .ico-control.ico-dark.ico-circle.ico-solid {
   background-color: #222;
   color: lightgray;
+}
+
+.ico-control.ico-dark.ico-square.ico-solid svg, .ico-control.ico-dark.ico-circle.ico-solid svg {
+  fill: lightgray;
 }
 
 .ico-control.ico-dark.ico-square.ico-solid:hover, .ico-control.ico-dark.ico-circle.ico-solid:hover {
@@ -11829,53 +12027,8 @@ a:hover, .btn-link:hover {
   color: #222;
 }
 
-.pagination .active .page-link {
-  background-color: #0e1239;
-  border-color: #0e1239;
-}
-
-.pagination .page-link {
-  min-height: 100%;
-}
-
-.pagination.pagination-plain .page-item:not(.active) .page-link {
-  border: 0;
-  background-color: transparent;
-}
-
-.pagination.pagination-plain .page-item:not(.active) .page-link:hover {
-  background-color: #e9ecef;
-}
-
-.pagination.pagination-rounded .page-link, .pagination.pagination-plain .page-link {
-  width: 2.2rem;
-  height: 2.2rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 .2rem;
-  border-radius: 50% !important;
-}
-
-.pagination.pagination-rounded.pagination-lg .page-link, .pagination.pagination-plain.pagination-lg .page-link {
-  width: 3.3rem;
-  height: 3.3rem;
-}
-
-.pagination.pagination-rounded.pagination-sm .page-link, .pagination.pagination-plain.pagination-sm .page-link {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.pagination.pagination-secondary .active .page-link {
-  background-color: #776bfd;
-  border-color: #776bfd;
+.ico-control.ico-dark.ico-square.ico-solid.ico-hover:hover svg, .ico-control.ico-dark.ico-circle.ico-solid.ico-hover:hover svg {
+  fill: #222;
 }
 
 .card {
@@ -11997,6 +12150,10 @@ a:hover, .btn-link:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.card-stats.stats-colored.light-stat .stats-ico svg {
+  fill: #212529;
+}
+
 .card-stats.stats-colored.light-stat .stats-footer {
   border-color: rgba(0, 0, 0, 0.2);
   color: #343a40;
@@ -12020,13 +12177,27 @@ a:hover, .btn-link:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.card-stats.stats-gradient .stats-ico img,
+.card-stats.stats-gradient .stats-ico svg, .card-stats.stats-colored .stats-ico img,
+.card-stats.stats-colored .stats-ico svg {
+  width: 60%;
+}
+
 .card-stats.stats-gradient .stats-ico.primary-ico {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5b5e78), to(#0e1239));
   background-image: linear-gradient(#5b5e78, #0e1239);
 }
 
+.card-stats.stats-gradient .stats-ico.primary-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.primary-stat {
   background-color: #0e1239;
+}
+
+.card-stats.stats-colored.primary-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.secondary-ico {
@@ -12034,8 +12205,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(#a39afe, #776bfd);
 }
 
+.card-stats.stats-gradient .stats-ico.secondary-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.secondary-stat {
   background-color: #776bfd;
+}
+
+.card-stats.stats-colored.secondary-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.success-ico {
@@ -12043,8 +12222,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(#9edc82, #70cc47);
 }
 
+.card-stats.stats-gradient .stats-ico.success-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.success-stat {
   background-color: #70cc47;
+}
+
+.card-stats.stats-colored.success-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.info-ico {
@@ -12052,8 +12239,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(#61c0cf, #17a2b8);
 }
 
+.card-stats.stats-gradient .stats-ico.info-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.info-stat {
   background-color: #17a2b8;
+}
+
+.card-stats.stats-colored.info-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.warning-ico {
@@ -12061,8 +12256,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(#f5cc85, #f1b44c);
 }
 
+.card-stats.stats-gradient .stats-ico.warning-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.warning-stat {
   background-color: #f1b44c;
+}
+
+.card-stats.stats-colored.warning-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.danger-ico {
@@ -12070,8 +12273,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(#f5999a, #f0696a);
 }
 
+.card-stats.stats-gradient .stats-ico.danger-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.danger-stat {
   background-color: #f0696a;
+}
+
+.card-stats.stats-colored.danger-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.light-ico {
@@ -12079,8 +12290,16 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(gainsboro, #ccc);
 }
 
+.card-stats.stats-gradient .stats-ico.light-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.light-stat {
   background-color: #ccc;
+}
+
+.card-stats.stats-colored.light-stat svg {
+  fill: #fff;
 }
 
 .card-stats.stats-gradient .stats-ico.dark-ico {
@@ -12088,8 +12307,65 @@ a:hover, .btn-link:hover {
   background-image: linear-gradient(dimgray, #222);
 }
 
+.card-stats.stats-gradient .stats-ico.dark-ico svg {
+  fill: #fff;
+}
+
 .card-stats.stats-colored.dark-stat {
   background-color: #222;
+}
+
+.card-stats.stats-colored.dark-stat svg {
+  fill: #fff;
+}
+
+.pagination .active .page-link {
+  background-color: #0e1239;
+  border-color: #0e1239;
+}
+
+.pagination .page-link {
+  min-height: 100%;
+}
+
+.pagination.pagination-plain .page-item:not(.active) .page-link {
+  border: 0;
+  background-color: transparent;
+}
+
+.pagination.pagination-plain .page-item:not(.active) .page-link:hover {
+  background-color: #e9ecef;
+}
+
+.pagination.pagination-rounded .page-link, .pagination.pagination-plain .page-link {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 .2rem;
+  border-radius: 50% !important;
+}
+
+.pagination.pagination-rounded.pagination-lg .page-link, .pagination.pagination-plain.pagination-lg .page-link {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+
+.pagination.pagination-rounded.pagination-sm .page-link, .pagination.pagination-plain.pagination-sm .page-link {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.pagination.pagination-secondary .active .page-link {
+  background-color: #776bfd;
+  border-color: #776bfd;
 }
 
 a, .btn:before {

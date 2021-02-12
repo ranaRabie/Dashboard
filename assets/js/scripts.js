@@ -145,7 +145,7 @@ $(document).ready(function () {
     if($('body').hasClass('rtl')){
         rtlCheck = true;
     }
-
+    $('[data-toggle="tooltip"]').tooltip();
     fns.sideNav.sideNavHandler();
     fns.sideNav.activeDropDownsHandler();
     fns.owlCarousels.basicOwl();
