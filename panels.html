@@ -1,0 +1,420 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R | Dashboard</title>
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">    
+    <!-- <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- If Arabic -->
+    <!-- <link rel="stylesheet" href="assets/css/styles-ar.css"> -->
+    
+</head>
+<!-- If Arabic dir="rtl" class="rtl"  -->
+<body>
+    <div id="main-wrapper">
+        <nav id="side-nav" aria-label="">
+            <div id="nav-header">
+                <img class="logo-shape" src="assets/images/logo.png" alt="">
+                <img class="logo-txt" src="assets/images/logo-text.png" alt="">
+            </div>
+            <div id="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i> <span class="nav-txt">dashboard</span></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-box-open"></i>
+                            <span class="nav-txt">components</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="cards.html"><i>c</i> <span class="nav-txt">cards</span></a>
+                          <a class="dropdown-item" href="buttons.html"><i>b</i> <span class="nav-txt">buttons</span></a>
+                          <a class="dropdown-item" href="icon-controls.html"><i>ic</i> <span class="nav-txt">icon controls</span></a>
+                          <a class="dropdown-item active" href="panels.html"><i>p</i> <span class="nav-txt">panels</span></a>
+                          <a class="dropdown-item" href="sweet-alert.html"><i>sa</i> <span class="nav-txt">sweet alert</span></a>
+                          <a class="dropdown-item" href="notifications.html"><i>n</i> <span class="nav-txt">notifications</span></a>
+                          <a class="dropdown-item" href="icons.html"><i>i</i> <span class="nav-txt">icons</span></a>
+                          <a class="dropdown-item" href="typography.html"><i>t</i> <span class="nav-txt">typography</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fab fa-wpforms"></i>
+                            <span class="nav-txt">forms</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="regular-forms.html"><i>b</i> <span class="nav-txt">regular forms</span></a>
+                          <a class="dropdown-item" href="extended-forms.html"><i>gs</i> <span class="nav-txt">extended forms</span></a>
+                          <a class="dropdown-item" href="validations-forms.html"><i>p</i> <span class="nav-txt">validation forms</span></a>
+                          <a class="dropdown-item" href="wizard.html"><i>sa</i> <span class="nav-txt">wizard</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-table"></i>
+                            <span class="nav-txt">tables</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="regular-tables.html"><i>rt</i> <span class="nav-txt">regular tables</span></a>
+                          <a class="dropdown-item" href="extended-tables.html"><i>et</i> <span class="nav-txt">extended tables</span></a>
+                          <a class="dropdown-item" href="bootstrap-tables.html"><i>bt</i> <span class="nav-txt">bootstrap tables</span></a>
+                          <a class="dropdown-item" href="datatables.html"><i>dt</i> <span class="nav-txt">datatables</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span class="nav-txt">maps</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="google-maps.html"><i>gm</i> <span class="nav-txt">google maps</span></a>
+                          <a class="dropdown-item" href="vector-maps.html"><i>vm</i> <span class="nav-txt">vector maps</span></a>
+                          <a class="dropdown-item" href="fullscreen-maps.html"><i>fm</i> <span class="nav-txt">fullscreen maps</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="charts.html"><i class="fas fa-chart-bar"></i> <span class="nav-txt">charts</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="calender.html"><i class="far fa-calendar-alt"></i> <span class="nav-txt">calender</span></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span class="nav-txt">pages</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="login.html"><i>lp</i> <span class="nav-txt">login page</span></a>
+                          <a class="dropdown-item" href="register.html"><i>rp</i> <span class="nav-txt">register page</span></a>
+                          <a class="dropdown-item" href="lockscreen.html"><i>lp</i> <span class="nav-txt">lockscreen page</span></a>
+                          <a class="dropdown-item" href="user.html"><i>up</i> <span class="nav-txt">user page</span></a>
+                          <a class="dropdown-item" href="coming-soon.html"><i>mcs</i> <span class="nav-txt">more comming soon</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header id="main-header">
+            <div class="header-col">
+                <div class="hamburger">
+                    <div>
+                        <span class="line"></span><span class="line"></span><span class="line"></span>
+                    </div>
+                </div>
+                <h1 id="header-tit" class="pg-title"></h1>
+            </div>
+            <div class="header-col">
+                <div class="dropdown-blk text-uppercase">
+                    <a class="dropdown-trigger ico-control ico-circle ico-secondary ico-rounded"><i class="fas fa-globe"></i></a>
+                    <ul class="dropdown-list dropdown-list-xs r-0 list-unstyled m-0" style="display: none;">
+                        <li><a href="#" class="disabled">EN</a></li>
+                        <li><a href="#">AR</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-blk text-uppercase">
+                    <a class="dropdown-trigger">
+                        <div class="ico-control ico-circle has-pulse ico-secondary ico-rounded"><i class="fas fa-bell"></i></div>
+                    </a>
+                    <ul class="dropdown-list dropdown-list-xl r-0 list-unstyled m-0" style="display: none;">
+                        <li>
+                            <a href="#" class="notification-item">
+                                <div class="ico-control ico-lg ico-circle ico-warning ico-rounded"><i class="fas fa-bell"></i></div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet.</h6>
+                                    <p>29 July 2020 - 02:26 PM</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification-item">
+                                <div class="ico-control ico-lg ico-circle ico-warning ico-rounded"><i class="fas fa-bell"></i></div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet.</h6>
+                                    <p>29 July 2020 - 02:26 PM</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification-item">
+                                <div class="ico-control ico-lg ico-circle ico-warning ico-rounded"><i class="fas fa-bell"></i></div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet.</h6>
+                                    <p>29 July 2020 - 02:26 PM</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification-item">
+                                <div class="ico-control ico-lg ico-circle ico-warning ico-rounded"><i class="fas fa-bell"></i></div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet.</h6>
+                                    <p>29 July 2020 - 02:26 PM</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification-item justify-content-center">
+                                show all notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-blk text-uppercase">
+                    <a class="dropdown-trigger ico-control ico-square"><img class="p-0" style="border-radius: inherit;" src="assets/images/pic1.jpg" alt=""></a>
+                    <ul class="dropdown-list r-0 list-unstyled m-0" style="display: none;">
+                        <li><a href="#"><i class="far fa-user text-secondary"></i> profile</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt text-danger"></i> logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </header>
+        <div id="main-content">
+            <h1 id="content-tit" class="pg-title">panels</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb plain-breadcrumb">
+                    <li class="breadcrumb-item"><a >dashboard</a></li>
+                    <li class="breadcrumb-item"><a >components</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">panels</li>
+                </ol>
+            </nav>
+            <div id="pg-content">
+                <h3 class="pg-sub-title-level-1">Collapsible Accordion</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="pg-sub-title-level-2">default Collapsible Accordion</h3>
+                        <div id="accordion" class="accordion">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                  </button>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="pg-sub-title-level-2">fancy Collapsible Accordion</h3>
+                        <div id="accordion-2" class="accordion accordion-fancy">
+                            <div class="card">
+                              <div class="card-header" id="headingOne-2">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne-2" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                  </button>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne-2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-2">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo-2">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-2">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree-2">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThree-2" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree-2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-2">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pg-sub-title-level-1">tabs</h3>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h3 class="pg-sub-title-level-2">default tabs</h3>
+                        <div class="tabs-default tabs-warning">
+                            <nav aria-label="">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="card">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="card">
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div class="card">
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="pg-sub-title-level-2">fancy tabs with icons</h3>
+                        <div class="tabs-fancy-1 tabs-secondary">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <span class="ico-control ico-sm"><i class="fas fa-home"></i></span> Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        <span class="ico-control ico-sm"><i class="fas fa-id-badge"></i></span>  Profile
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                        <span class="ico-control ico-sm"><i class="fas fa-headphones"></i></span> Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="card">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="card">
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="card">
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <h3 class="pg-sub-title-level-2 text-center">Page Subcategories</h3>
+                        <div class="tabs-fancy-2 tabs-warning">    
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab-2" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-desc" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <span class="ico-control ico-circle ico-xl"><i class="fas fa-file-alt"></i></span> description
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        <span class="ico-control ico-circle ico-xl"><i class="fas fa-balance-scale"></i></span>  legal info
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-help" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                        <span class="ico-control ico-circle ico-xl"><i class="fas fa-question"></i></span> help center
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-desc" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="card">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="card">
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-help" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="card">
+                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main-footer">
+            <p class="m-0 text-capitalize text-center">developed by <a class="text-secondary" href="#">rana rabie</a></p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

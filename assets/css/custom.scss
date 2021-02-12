@@ -615,6 +615,11 @@ a, .btn-link{
   cursor: pointer;
   &:not(a):not(button){
     pointer-events: none;
+    color: inherit!important;
+  }
+  &:not(.ico-square):not(.ico-circle){
+    width:auto!important;
+    height:auto!important;
   }
   &.ico-circle{
     border-radius: 50%;
@@ -725,6 +730,7 @@ a, .btn-link{
 .card{
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
   border-color: #d8d8d8;
+  padding: 1rem;
 }
 
 // Stats Cards
@@ -913,6 +919,96 @@ a, .btn-link{
     }
   }
 }
+
+// Accordions
+.accordion{
+  .card{
+    padding: 0;
+  }
+}
+.accordion-fancy{
+  & .card{
+    margin-bottom: 1rem;
+    border-radius: .3rem!important;
+    overflow: hidden;
+  }
+  & .card-header{
+    padding: 0;
+    & .btn{
+      width: 100%;
+      border-radius: 0;
+      text-align: initial;
+    }
+  }
+}
+
+// Tabs
+.tabs-default{
+  & .nav-tabs{
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    border: 0;
+    & .nav-link{
+      &.active{
+        background-color: $white;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+.nav-pills{
+  & .nav-link{
+    text-transform: capitalize;
+    color: gray("500");
+    &:hover{
+      color: gray("700");
+    }
+  }
+}
+.tabs-fancy-2{
+  & .nav-pills{
+    & .nav-link{
+      background-color: transparent!important;
+      & .ico-control{
+        display: flex;
+        margin: 0 auto .3rem;
+      }
+    }
+  }
+}
+@each $color, $value in $theme-colors {
+  .tabs-fancy-1{
+    &.tabs-#{$color} {
+      & .nav-link{
+        &.active{
+          background-color: theme-color($color);
+          color: $white;
+          & .ico-circle,
+          & .ico-square{
+            background-color: rgba(0, 0, 0, 0.08);
+            color: $white!important;
+          }
+        }
+      }
+    }
+  }
+  .tabs-fancy-2{
+    &.tabs-#{$color} {
+      & .nav-link{
+        &.active{
+          color: theme-color($color);
+          & .ico-circle,
+          & .ico-square{
+            background-color: theme-color($color);
+            color: $white!important;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // Page Content
 a, .btn:before{
