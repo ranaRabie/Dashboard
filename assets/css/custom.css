@@ -11633,12 +11633,12 @@ a:hover, .btn-link:hover {
 
 .ico-control:not(a):not(button) {
   pointer-events: none;
-  color: inherit !important;
 }
 
-.ico-control:not(.ico-square):not(.ico-circle) {
+.ico-control:not(a):not(button):not(.ico-square):not(.ico-circle) {
   width: auto !important;
   height: auto !important;
+  color: inherit !important;
 }
 
 .ico-control.ico-circle {

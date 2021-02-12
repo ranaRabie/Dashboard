@@ -637,11 +637,11 @@ a, .btn-link{
   cursor: pointer;
   &:not(a):not(button){
     pointer-events: none;
-    color: inherit!important;
   }
-  &:not(.ico-square):not(.ico-circle){
+  &:not(a):not(button):not(.ico-square):not(.ico-circle){
     width:auto!important;
     height:auto!important;
+    color: inherit!important;
   }
   &.ico-circle{
     border-radius: 50%;
