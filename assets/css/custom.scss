@@ -47,9 +47,6 @@ $pageTitle-margin: 0 1rem;
 $pageSubTitleLev1-fontSize: 1.2rem;
 $pageSubTitleLev2-fontSize: 1rem;
 
-$breadcrumb-color: #a5acbc;
-$breadcrumbActive-color: #000;
-
 $footer-bgColor: #efefef;
 $footer-borderColor: #dad9d9;
 
@@ -526,28 +523,53 @@ a, .btn-link{
   font-size: $pageSubTitleLev2-fontSize;
   font-weight: $mid-FontWeight;
 }
+
+// Breadcrumbs
 .breadcrumb {
+  text-transform: capitalize;
+  font-size: $mid-fontSize;
+  font-weight: $mid-FontWeight;
+  &.breadcrumb-sm{
+    font-size: $sm-fontSize;
+    padding: .3rem 1rem;
+  }
+  & a{
+    cursor: default;
+  }
+  & a[href]{
+    cursor: pointer;
+  }
+  & .breadcrumb-item {
+    &::before,
+    & a{
+      color: gray("500");
+    }
+    & a[href]:hover,
+    &.active{
+      color: $body-color;
+    }
+  }
   &.plain-breadcrumb{
     background-color: transparent;
-    padding: 0;
-    font-size: $mid-fontSize;
-    font-weight: $mid-FontWeight;
-    text-transform: capitalize;
-    & .breadcrumb-item {
-      &::before,
-      & a{
-        color: $breadcrumb-color;
-        cursor: default;
+    padding: 0!important;
+  }
+}
+@each $color, $value in $theme-colors {
+  .breadcrumb{
+    &.colored-breadcrumb{
+      &.crumb-#{$color}{
+        background-color: theme-color($color);
+        & .breadcrumb-item {
+          &::before,
+          & a{
+            color: gray("300");
+          }
+          & a[href]:hover,
+          &.active{
+            color: $white;
+          }
+        }
       }
-      & a[href]{
-        cursor: pointer;
-      }
-      & a[href]:hover{
-        color: $breadcrumbActive-color;
-      }
-    }
-    & .breadcrumb-item.active{
-      color: $breadcrumbActive-color;
     }
   }
 }
@@ -922,25 +944,26 @@ a, .btn-link{
 
 // Accordions
 .accordion{
-  .card{
-    padding: 0;
-  }
-}
-.accordion-fancy{
   & .card{
-    margin-bottom: 1rem;
-    border-radius: .3rem!important;
-    overflow: hidden;
-  }
-  & .card-header{
     padding: 0;
-    & .btn{
-      width: 100%;
-      border-radius: 0;
-      text-align: initial;
+  }
+  &.accordion-fancy{
+    & .card{
+      margin-bottom: 1rem;
+      border-radius: .3rem!important;
+      overflow: hidden;
+    }
+    & .card-header{
+      padding: 0!important;
+      & .btn{
+        width: 100%;
+        border-radius: 0;
+        text-align: initial;
+      }
     }
   }
 }
+
 
 // Tabs
 .tabs-default{

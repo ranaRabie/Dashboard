@@ -11378,30 +11378,141 @@ a:hover, .btn-link:hover {
   font-weight: 500;
 }
 
-.breadcrumb.plain-breadcrumb {
-  background-color: transparent;
-  padding: 0;
+.breadcrumb {
+  text-transform: capitalize;
   font-size: 0.9rem;
   font-weight: 500;
-  text-transform: capitalize;
 }
 
-.breadcrumb.plain-breadcrumb .breadcrumb-item::before,
-.breadcrumb.plain-breadcrumb .breadcrumb-item a {
-  color: #a5acbc;
+.breadcrumb.breadcrumb-sm {
+  font-size: 0.8rem;
+  padding: .3rem 1rem;
+}
+
+.breadcrumb a {
   cursor: default;
 }
 
-.breadcrumb.plain-breadcrumb .breadcrumb-item a[href] {
+.breadcrumb a[href] {
   cursor: pointer;
 }
 
-.breadcrumb.plain-breadcrumb .breadcrumb-item a[href]:hover {
+.breadcrumb .breadcrumb-item::before,
+.breadcrumb .breadcrumb-item a {
+  color: #adb5bd;
+}
+
+.breadcrumb .breadcrumb-item a[href]:hover, .breadcrumb .breadcrumb-item.active {
   color: #000;
 }
 
-.breadcrumb.plain-breadcrumb .breadcrumb-item.active {
-  color: #000;
+.breadcrumb.plain-breadcrumb {
+  background-color: transparent;
+  padding: 0 !important;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-primary {
+  background-color: #2a4574;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-primary .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-primary .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-primary .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-primary .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-secondary {
+  background-color: #5fcbb4;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-secondary .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-secondary .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-secondary .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-secondary .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-success {
+  background-color: #70cc47;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-success .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-success .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-success .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-success .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-info {
+  background-color: #17a2b8;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-info .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-info .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-info .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-info .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-warning {
+  background-color: #f1b44c;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-warning .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-warning .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-warning .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-warning .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-danger {
+  background-color: #f0696a;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-danger .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-danger .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-danger .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-danger .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-light {
+  background-color: #ccc;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-light .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-light .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-light .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-light .breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-dark {
+  background-color: #222;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-dark .breadcrumb-item::before,
+.breadcrumb.colored-breadcrumb.crumb-dark .breadcrumb-item a {
+  color: #dee2e6;
+}
+
+.breadcrumb.colored-breadcrumb.crumb-dark .breadcrumb-item a[href]:hover, .breadcrumb.colored-breadcrumb.crumb-dark .breadcrumb-item.active {
+  color: #fff;
 }
 
 #main-footer {
@@ -12379,17 +12490,17 @@ a:hover, .btn-link:hover {
   padding: 0;
 }
 
-.accordion-fancy .card {
+.accordion.accordion-fancy .card {
   margin-bottom: 1rem;
   border-radius: 0.3rem !important;
   overflow: hidden;
 }
 
-.accordion-fancy .card-header {
-  padding: 0;
+.accordion.accordion-fancy .card-header {
+  padding: 0 !important;
 }
 
-.accordion-fancy .card-header .btn {
+.accordion.accordion-fancy .card-header .btn {
   width: 100%;
   border-radius: 0;
   text-align: initial;
