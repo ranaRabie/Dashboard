@@ -40,9 +40,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="cards.html"><i>c</i> <span class="nav-txt">cards</span></a>
                           <a class="dropdown-item" href="buttons.html"><i>b</i> <span class="nav-txt">buttons</span></a>
-                          <a class="dropdown-item active" href="icon-controls.html"><i>ic</i> <span class="nav-txt">icon controls</span></a>
+                          <a class="dropdown-item" href="icon-controls.html"><i>ic</i> <span class="nav-txt">icon controls</span></a>
                           <a class="dropdown-item" href="breadcrumbs.html"><i>b</i> <span class="nav-txt">breadcrumbs</span></a>
-                          <a class="dropdown-item" href="dropdowns.html"><i>d</i> <span class="nav-txt">dropdowns</span></a>
+                          <a class="dropdown-item active" href="dropdowns.html"><i>d</i> <span class="nav-txt">dropdowns</span></a>
                           <a class="dropdown-item" href="panels.html"><i>p</i> <span class="nav-txt">panels</span></a>
                           <a class="dropdown-item" href="sweet-alert.html"><i>sa</i> <span class="nav-txt">sweet alert</span></a>
                           <a class="dropdown-item" href="notifications.html"><i>n</i> <span class="nav-txt">notifications</span></a>
@@ -173,96 +173,84 @@
                         <li><a href="#"><i class="fas fa-sign-out-alt text-danger"></i> logout</a></li>
                     </ul>
                 </div>
-                
             </div>
         </header>
         <div id="main-content">
-            <h1 id="content-tit" class="pg-title">icon controls</h1>
+            <h1 id="content-tit" class="pg-title">dropdowns</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb plain-breadcrumb">
                     <li class="breadcrumb-item"><a >dashboard</a></li>
                     <li class="breadcrumb-item"><a >components</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">icon controls</li>
+                    <li class="breadcrumb-item active" aria-current="page">dropdowns</li>
                 </ol>
             </nav>
             <div id="pg-content">
+                <h3 class="pg-sub-title-level-1">dropdowns</h3>
+                <h3 class="pg-sub-title-level-2">default dropdowns</h3>
+                <div class="dropdown-blk text-capitalize">
+                    <a class="dropdown-trigger btn btn-primary">trigger dropdown</a>
+                    <ul class="dropdown-list dropdown-left">
+                        <li><a href="#">dropdown item</a></li>
+                        <li><a href="#">dropdown item</a></li>
+                    </ul>
+                </div>
+                <h3 class="pg-sub-title-level-2 mt-3">default dropdowns positions</h3>
                 <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icon styles</h3>
-                        <a class="ico-control ico-primary"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-primary ico-square"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-primary ico-circle"><i class="fas fa-bell"></i></a>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icon colors</h3>
-                        <div>
-                            <a class="ico-control ico-square ico-primary"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-secondary"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-warning"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-info"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-danger"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-success"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-light"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-dark"><i class="fas fa-bell"></i></a>
+                    <div class="col-md-6 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">trigger dropdown on right</a>
+                            <ul class="dropdown-list dropdown-right dropdown-list-sm">
+                                <li><a href="#">dropdown item</a></li>
+                                <li><a href="#">dropdown item</a></li>
+                            </ul>
                         </div>
-                        <div class="mt-2">
-                            <a class="ico-control ico-square ico-primary ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-secondary ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-warning ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-info ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-danger ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-success ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-light ico-solid"><i class="fas fa-bell"></i></a>
-                            <a class="ico-control ico-square ico-dark ico-solid"><i class="fas fa-bell"></i></a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">trigger dropdown on left</a>
+                            <ul class="dropdown-list dropdown-left dropdown-list-sm">
+                                <li><a href="#">dropdown item</a></li>
+                                <li><a href="#">dropdown item</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icon hover styles</h3>
-                        <a class="ico-control ico-square ico-secondary"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-secondary ico-hover"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-warning ico-solid"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-warning ico-solid ico-hover"><i class="fas fa-bell"></i></a>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icon sizes</h3>
-                        <a class="ico-control ico-square ico-secondary ico-xs"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-secondary ico-sm"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-secondary"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-secondary ico-lg"><i class="fas fa-bell"></i></a>
-                        <a class="ico-control ico-square ico-secondary ico-xl"><i class="fas fa-bell"></i></a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icon image & SVG</h3>
-                        <div class="ico-controls-wrapper">
-                            <a class="ico-control ico-circle ico-secondary ico-solid ico-lg" data-toggle="tooltip" data-placement="bottom" title="send"><img src="assets/images/ico-send.png" alt=""></a>
-                            <a class="ico-control ico-circle ico-secondary ico-solid ico-lg" data-toggle="tooltip" data-placement="bottom" title="send">
-                                <svg id="ico-heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
-                                    <defs>
-                                        <clipPath id="clip-path">
-                                        <rect id="Rectangle_561" data-name="Rectangle 561" width="24" height="24" transform="translate(-0.134 -0.134)"></rect>
-                                        </clipPath>
-                                    </defs>
-                                    <g id="favorite_b" transform="translate(0.134 0.134)" clip-path="url(#clip-path)">
-                                        <g id="passion" transform="translate(-0.036 1.514)">
-                                        <g id="Group_349" data-name="Group 349">
-                                            <path id="Path_325" data-name="Path 325" d="M16.771.866A7.179,7.179,0,0,0,11.435,3.3,7.179,7.179,0,0,0,6.1.866C2.438.866,0,4.27,0,8.083,0,10.936,1.439,16.5,11.074,21.665a.762.762,0,0,0,.721,0C21.431,16.495,22.87,10.936,22.87,8.083,22.87,4.181,20.359.866,16.771.866Zm-5.336,19.26c-4.628-2.545-9.91-6.785-9.91-12.043C1.525,5.158,3.281,2.39,6.1,2.39a5.77,5.77,0,0,1,4.689,2.545.763.763,0,0,0,1.3,0A5.842,5.842,0,0,1,16.771,2.39c2.839,0,4.574,2.8,4.574,5.693C21.345,13.341,16.063,17.581,11.435,20.126Z" transform="translate(0 -0.866)"></path>
-                                        </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </a>
+                <h3 class="pg-sub-title-level-2 mt-3">default dropdowns sizes</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">xsmall dropdown</a>
+                            <ul class="dropdown-list dropdown-left dropdown-list-xs">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3 class="pg-sub-title-level-2">icons group</h3>
-                        <div class="ico-controls-wrapper">
-                            <a class="ico-control ico-circle ico-secondary ico-solid ico-xs" data-toggle="tooltip" data-placement="bottom" title="view"><i class="fas fa-eye"></i></a>
-                            <a class="ico-control ico-circle ico-warning ico-solid ico-xs" data-toggle="tooltip" data-placement="bottom" title="edit"><i class="fas fa-pencil-alt"></i></a>
-                            <a class="ico-control ico-circle ico-danger ico-solid ico-xs" data-toggle="tooltip" data-placement="bottom" title="delete"><i class="fas fa-trash"></i></a>
+                    <div class="col-md-4 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">small dropdown</a>
+                            <ul class="dropdown-list dropdown-left dropdown-list-sm">
+                                <li><a href="#">dropdown item</a></li>
+                                <li><a href="#">dropdown item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">meduim dropdown</a>
+                            <ul class="dropdown-list dropdown-left dropdown-list-md">
+                                <li><a href="#">dropdown item</a></li>
+                                <li><a href="#">dropdown item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="dropdown-blk text-capitalize">
+                            <a class="dropdown-trigger btn btn-primary btn-sm">large dropdown</a>
+                            <ul class="dropdown-list dropdown-left dropdown-list-lg">
+                                <li><a href="#">dropdown item</a></li>
+                                <li><a href="#">dropdown item</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

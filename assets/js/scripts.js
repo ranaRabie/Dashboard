@@ -129,6 +129,11 @@ let fns ={
             let pgTit = $('#content-tit').text();
             $("#header-tit").text(pgTit);
         },
+    },
+    toolTips:{
+        tooltipsEnable(){
+            $('[data-toggle="tooltip"]').tooltip();
+        }
     } 
 }
 
@@ -145,12 +150,13 @@ $(document).ready(function () {
     if($('body').hasClass('rtl')){
         rtlCheck = true;
     }
-    $('[data-toggle="tooltip"]').tooltip();
+    
     fns.sideNav.sideNavHandler();
     fns.sideNav.activeDropDownsHandler();
     fns.owlCarousels.basicOwl();
     fns.dropDowns.defaultDropDown();
     fns.pgTit.pgTitHandling();
+    fns.toolTips.tooltipsEnable();
 
     // $('input[type=file]').on('change', function(){
     //     $(this).closest('.upload-control-wrapper').find('.upload-val').text($(this).val());
