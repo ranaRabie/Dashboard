@@ -1,4 +1,5 @@
 let rtlCheck = false;
+const $ = jQuery;
 
 let fns ={
     sideNav:{
